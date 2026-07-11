@@ -33,7 +33,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
 <section id="hero">
-  <div class="hero-bg" style="background-image:url('/assets/hero.jpg')"></div>
+  <div class="hero-bg" style="background-image:url('/assets/fw-hero.jpg')"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <span class="hero-kicker">Alles genießen dürfen, nichts müssen ····</span>
@@ -127,7 +127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="fw-image"><img src="/assets/liegewiese-3.jpg" alt="Der Heinrichshof" loading="lazy" /></section>
+<section class="fw-image"><img src="/assets/liegewiese-4.jpg" alt="Der Heinrichshof – Liegewiese" loading="lazy" /></section>
 
 <section id="infos">
   <div class="wrap">
@@ -184,37 +184,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section id="rooms" style="background:var(--bg-alt)">
+<section id="apartment" style="background:var(--bg-alt)">
+  <style>
+    .apt-grid { display:grid; grid-template-columns:1.15fr 1fr; gap:34px; align-items:stretch; margin-top:40px; }
+    .apt-slider { display:flex; gap:8px; overflow-x:auto; scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch; border-radius:var(--radius); scrollbar-width:none; }
+    .apt-slider::-webkit-scrollbar { display:none; }
+    .apt-slider img { flex:0 0 100%; width:100%; aspect-ratio:3/2; object-fit:cover;
+      scroll-snap-align:start; border-radius:var(--radius); }
+    .apt-hint { text-align:center; font-size:.78rem; color:var(--text-light); margin-top:10px;
+      letter-spacing:.08em; text-transform:uppercase; }
+    .apt-info { background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow); padding:34px 32px; }
+    .apt-info h3 { font-size:1.3rem; margin-bottom:4px; }
+    .apt-meta { color:var(--text-light); font-size:.95rem; margin-bottom:14px; }
+    .apt-info p { color:var(--text-mid); font-size:.96rem; margin-bottom:12px; }
+    .apt-price { font-size:1.15rem; font-weight:700; color:var(--accent-dark); margin:14px 0; }
+    .apt-info ul { list-style:none; margin:0 0 20px; padding:0; }
+    .apt-info li { padding:6px 0 6px 26px; position:relative; color:var(--text-mid); font-size:.92rem; }
+    .apt-info li::before { content:'✓'; position:absolute; left:0; color:var(--accent); font-weight:700; }
+    .apt-link { color:var(--accent-dark); font-weight:600; font-size:.95rem; }
+    #pakete .packages-grid { grid-template-columns:repeat(2,1fr); max-width:920px; margin-inline:auto; }
+    @media (max-width:900px) {
+      .apt-grid { grid-template-columns:1fr; gap:20px; }
+      .apt-slider img { aspect-ratio:16/10; }
+      .apt-info { padding:26px 22px; }
+    }
+    @media (max-width:768px) {
+      #pakete .packages-grid { grid-template-columns:1fr; }
+    }
+  </style>
   <div class="wrap">
     <h2 class="section-title center fade">Ein Blick ins Urlaubsglück</h2>
-    <div class="rooms-grid" style="grid-template-columns:repeat(3,1fr)">
-      <article class="room-card fade">
-        <div class="room-img"><img src="/assets/zimmer-1.jpg" alt="Appartement in der Residence" loading="lazy" /></div>
-        <div class="room-body"><h3>Appartement in der Residence</h3><div class="room-meta">55 m² · 2–6 Personen</div><div class="room-price">Selbstverpflegung</div></div>
-      </article>
-      <article class="room-card fade">
-        <div class="room-img"><img src="/assets/zimmer-2.jpg" alt="Wohnbereich" loading="lazy" /></div>
-        <div class="room-body"><h3>Lichtdurchfluteter Wohnbereich</h3><div class="room-meta">Eigene Küche · großer Balkon</div><div class="room-price">Blick bis zu den Dolomiten</div></div>
-      </article>
-      <article class="room-card fade">
-        <div class="room-img"><img src="/assets/terrasse.jpg" alt="Loggia mit Ausblick" loading="lazy" /></div>
-        <div class="room-body"><h3>Private Loggia</h3><div class="room-meta">Ruhige Lage</div><div class="room-price">Unverbauter Blick übers Meraner Land</div></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="restplaetze" style="padding-bottom:0">
-  <div class="wrap">
-    <div class="banner fade">
-      <span class="section-label">Kurzfristig verfügbar</span>
-      <h2>Restplätze im Juni mit 10% Rabatt sichern.</h2>
-      <p>Für alle, die spontan ein paar ruhige Tage in Algund verbringen möchten: ausgewählte Suiten sind Anfang Juni noch verfügbar – mit 10% Preisvorteil.</p>
-      <div class="slots">
-        <div class="slot">07.06. – 10.06. · Suite im Stammhaus · −10% Rabatt</div>
-        <div class="slot">07.06. – 14.06. · Suite · −10% Rabatt</div>
+    <div class="apt-grid">
+      <div class="fade">
+        <div class="apt-slider">
+          <img src="/assets/apartment-1.jpg" alt="Appartement in der Residence" loading="lazy" />
+          <img src="/assets/apartment-2.jpg" alt="Appartement in der Residence" loading="lazy" />
+          <img src="/assets/apartment-3.jpg" alt="Appartement in der Residence" loading="lazy" />
+          <img src="/assets/apartment-4.jpg" alt="Appartement in der Residence" loading="lazy" />
+          <img src="/assets/apartment-5.jpg" alt="Appartement in der Residence" loading="lazy" />
+          <img src="/assets/apartment-6.jpg" alt="Appartement in der Residence" loading="lazy" />
+          <img src="/assets/apartment-7.jpg" alt="Appartement in der Residence" loading="lazy" />
+        </div>
+        <div class="apt-hint">← Wischen für mehr Bilder →</div>
       </div>
-      <a class="btn" href="#anfrage">Restplatz anfragen</a>
+      <div class="apt-info fade">
+        <h3>Appartement in der Residence</h3>
+        <div class="apt-meta">2 – 4 Personen&nbsp;|&nbsp;55 m²</div>
+        <p>Zur Ausstattung gehören ein lichtdurchfluteter Wohnraum mit Sat-TV, Radio, Tablet und WLAN, Doppelzimmer mit Boxspringbetten, separates Kinderzimmer, Küchenzeile mit...</p>
+        <p><a class="apt-link" href="https://www.heinrichshof.com/de/wohnen/appartements/appartement-detail/appartement-in-der-residence" target="_blank" rel="noopener">Details zum Zimmer</a></p>
+        <div class="apt-price">ab 327 € pro Zimmer</div>
+        <ul>
+          <li><strong>Abendessen</strong> flexibel dazubuchbar: € 40,– Erwachsene / € 20,– Kinder (6–14). Galamenü am Mittwoch € 45,– / € 30,–. Kinder unter 5 essen kostenlos. Anmeldung bis 11:00 Uhr am selben Tag.</li>
+          <li><strong>Frühstück</strong> je nach Verfügbarkeit: € 25,– Erwachsene (ab 15) / € 15,– Kinder (6–14). Anmeldung innerhalb des Vortages.</li>
+          <li><strong>Brötchenservice</strong>: bis zum Vorabend per Tablet bestellen – morgens liegen die frischen Brötchen vor Ihrer Tür.</li>
+        </ul>
+        <a class="btn" href="#anfrage">Jetzt anfragen</a>
+      </div>
     </div>
   </div>
 </section>
@@ -227,23 +253,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p style="max-width:760px;margin:0 auto;color:var(--text-mid)">Drei ausgewählte Pauschalen für entspannte Tage in Algund – mit Verwöhnmomenten, Aktivprogramm und Südtiroler Genuss.</p>
     </div>
     <div class="packages-grid">
-      <article class="package fade">
-        <div class="pk-img"><img src="/assets/paket-sommer.jpg" alt="PALMEN & ALMEN – gemütlich in den Sommer" loading="lazy" /></div>
-        <div class="pk-body">
-          <div class="pk-date">11.07.2026 – 25.07.2026 · ab 5 Übernachtungen</div>
-          <h3>PALMEN &amp; ALMEN – gemütlich in den Sommer</h3>
-          <div class="pk-price">ab 158,00 € pro Person</div>
-          <p>Keine großen Bergtouren, sondern gemütliche Wanderungen, Ausflüge und echte Genussmomente. Im Mittelpunkt stehen Land, Küche und Menschen Südtirols.</p>
-          <ul>
-            <li>Willkommensgetränk</li>
-            <li>25 € Massagegutschein pro Zimmer</li>
-            <li>Kuchen- &amp; Strudelbuffet</li>
-            <li>Gästewanderung</li>
-            <li>SüdtirolPass inklusive</li>
-          </ul>
-          <a class="btn" href="#anfrage">Angebot anfragen</a>
-        </div>
-      </article>
       <article class="package fade">
         <div class="pk-img"><img src="/assets/paket-dolcevita.jpg" alt="LIEBLINGSWOCHEN – Dolce Vita im Heinrichshof" loading="lazy" /></div>
         <div class="pk-body">
