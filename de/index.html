@@ -27,7 +27,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header id="site-header">
   <div class="header-inner">
     <a class="logo" href="#hero"><span class="l1">Der Heinrichshof</span><span class="l2">Hotel &amp; Residence · Algund</span></a>
-    <a class="btn-pill" href="#anfrage">Jetzt anfragen</a>
+    <div class="header-actions">
+      <a class="btn-pill" href="#anfrage">Jetzt anfragen</a>
+      <a class="btn-pill header-booking" href="#buchung">Direkt buchen</a>
+    </div>
   </div>
 </header>
 
@@ -327,64 +330,274 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="section-title">Fordern Sie Ihren Traumurlaub an.</h2>
       <p style="color:var(--text-mid)">Bereit für romantische Momente der angenehmen Entspannung?</p>
     </div>
-    <div class="form-card fade">
-      <!-- RG Request Widget START -->
-      <script type="text/javascript" data-rg-widget="request">
-        (function () {
-          function getParam(name) {
-            var url = window.location.search;
-            var regex = new RegExp('[?&]' + name + '=([^&#]*)');
-            var results = regex.exec(url);
-            return results ? decodeURIComponent(results[1].replace(/\+/g, ' ')) : '';
-          }
-          // UTM + GCLID in localStorage speichern
-          var gclid = getParam('gclid');
-          if (gclid) localStorage.setItem('gclid', gclid);
-          var utmSource = getParam('utm_source') || localStorage.getItem('utm_source');
-          var utmMedium = getParam('utm_medium') || localStorage.getItem('utm_medium');
-          var utmCampaign = getParam('utm_campaign') || localStorage.getItem('utm_campaign');
-          if (getParam('utm_source')) localStorage.setItem('utm_source', utmSource);
-          if (getParam('utm_medium')) localStorage.setItem('utm_medium', utmMedium);
-          if (getParam('utm_campaign')) localStorage.setItem('utm_campaign', utmCampaign);
-          if (!window.rgWidgetApi) window.rgWidgetApi = {};
-          window.rgWidgetApi["request"] = {
-            options: {
-              apiBaseUrl: "https://heinrichshof.re-guest.com",
-              serviceToken: "C4C80700-864F-47EF-903E-42E33E9E02E7",
-              languageCode: "de",
-              privacyUrl: null,
-              facilityCode: null,
-              styleUrls: null,
-              sourceOfBusiness: "OOTB LP",
-              promotionVendor: utmSource,
-              promotionMedium: utmMedium,
-              promotion: utmCampaign
+    <div class="fade">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/de.js"></script>
+
+<style>
+    .hf-wrap { --hf-gold:#ae9b77; --hf-gold-dark:#96835f; --hf-ink:#3f3a33; --hf-label:#6b6459; --hf-border:#e4ddd0; --hf-cream:#f6f2ea; --hf-err:#b23a2e;
+        max-width:640px;margin:auto;font-family:'Jost',sans-serif;color:var(--hf-ink);background:#fff;border:1px solid var(--hf-border);border-radius:16px;box-shadow:0 18px 50px rgba(63,58,51,0.10);overflow:hidden; }
+    .hf-head { padding:34px 34px 6px;text-align:center; }
+    .hf-eyebrow { display:inline-block;font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--hf-gold);font-weight:500;margin-bottom:12px; }
+    .hf-head h2 { font-family:'Cormorant Garamond',serif;font-weight:600;font-size:2.15rem;line-height:1.1;margin:0 0 10px;color:var(--hf-ink);letter-spacing:0.01em; }
+    .hf-head p { margin:0 auto;max-width:440px;font-size:0.92rem;line-height:1.6;color:var(--hf-label);font-weight:300; }
+    .hf-rule { width:46px;height:2px;background:var(--hf-gold);margin:18px auto 4px;border-radius:2px; }
+
+    .custom-form { display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:26px 34px 34px; }
+    .full-width { grid-column:span 2; }
+    .custom-form label { display:block;margin-bottom:6px;font-weight:500;color:var(--hf-label);font-size:0.8rem;letter-spacing:0.02em; }
+    .req::after { content:" *";color:var(--hf-gold-dark); }
+    .custom-form input,.custom-form select,.custom-form textarea { width:100%;padding:12px 13px;border:1px solid var(--hf-border);border-radius:9px;font-size:0.95rem;box-sizing:border-box;background:#fff;font-family:'Jost',sans-serif;color:var(--hf-ink);transition:border-color .15s, box-shadow .15s; }
+    .custom-form input::placeholder,.custom-form textarea::placeholder { color:#b7ad9c; }
+    .custom-form input:focus,.custom-form select:focus,.custom-form textarea:focus { border-color:var(--hf-gold);outline:none;box-shadow:0 0 0 3px rgba(174,155,119,0.15); }
+    .custom-form input.error,.custom-form select.error { border-color:var(--hf-err) !important; }
+    .phone-row { display:flex;gap:8px; }
+    .phone-row select { flex:0 0 auto;width:120px;font-size:0.9rem;padding:12px 8px; }
+    .phone-row input { flex:1; }
+    .child-age-field { display:none; }
+    .privacy-row { grid-column:span 2;display:flex;align-items:flex-start;gap:11px;padding:14px 16px;background:var(--hf-cream);border-radius:10px;border:1px solid #ece7dd; }
+    .privacy-row input[type="checkbox"] { width:18px;min-width:18px;height:18px;margin-top:2px;cursor:pointer;accent-color:var(--hf-gold); }
+    .privacy-row label { font-size:0.82rem;color:var(--hf-label);font-weight:300;margin:0;cursor:pointer;line-height:1.55; }
+    .privacy-row label a { color:var(--hf-gold-dark);text-decoration:underline; }
+    .field-error { font-size:0.77rem;color:var(--hf-err);margin-top:4px;display:none; }
+    .submit-btn { grid-column:span 2;background:var(--hf-gold);color:#fff;padding:15px;border:none;border-radius:9px;cursor:pointer;font-size:0.98rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;font-family:'Jost',sans-serif;margin-top:6px;transition:background .2s; }
+    .submit-btn:hover { background:var(--hf-gold-dark); }
+    .submit-btn:disabled { background:#cdc6b8;cursor:not-allowed; }
+    .success-msg { display:none;grid-column:span 2;background:#eef3ea;border:1px solid #cfe0c4;border-radius:10px;padding:16px;color:#4a6b3a;font-size:0.95rem;font-weight:400;text-align:center;line-height:1.55; }
+    @media (max-width:600px) { .hf-head{padding:26px 20px 4px;} .hf-head h2{font-size:1.8rem;} .custom-form{padding:22px 20px 26px;} .m-side{grid-column:span 1 !important;} }
+</style>
+
+<div class="hf-wrap">
+    <div class="hf-head">
+        <span class="hf-eyebrow">Der Heinrichshof &middot; Algund</span>
+        <h2>Ihre unverbindliche Anfrage</h2>
+        <p>Erz&auml;hlen Sie uns von Ihrem Wunschurlaub &ndash; wir stellen Ihnen ganz pers&ouml;nlich Ihr Angebot im Meraner Land zusammen.</p>
+        <div class="hf-rule"></div>
+    </div>
+
+    <form id="bookingForm" class="custom-form" novalidate="">
+        <input type="hidden" id="hLanguage" name="language" value="DE">
+
+        <!-- Ankunft / Abreise -->
+        <div class="m-side">
+            <label class="req" for="ankunft">Ankunft</label>
+            <input type="text" id="ankunft" name="ankunft" placeholder="tt.mm.jjjj" required="">
+            <div class="field-error" id="errAnkunft">Bitte Ankunftsdatum w&auml;hlen.</div>
+        </div>
+        <div class="m-side">
+            <label class="req" for="abreise">Abreise</label>
+            <input type="text" id="abreise" name="abreise" placeholder="tt.mm.jjjj" required="">
+            <div class="field-error" id="errAbreise">Bitte Abreisedatum w&auml;hlen.</div>
+        </div>
+
+        <!-- Verpflegungsart — PFLICHTFELD (wird in die Nachricht eingefügt) -->
+        <div class="full-width">
+            <label class="req" for="verpflegung">Verpflegungsart</label>
+            <select id="verpflegung" required="">
+                <option value="">-- Bitte w&auml;hlen --</option>
+                <option value="Zimmer mit Fr&uuml;hst&uuml;ck">Zimmer mit Fr&uuml;hst&uuml;ck</option>
+                <option value="Halbpension">Halbpension</option>
+                <option value="&Uuml;bernachtung">&Uuml;bernachtung</option>
+            </select>
+            <div class="field-error" id="errVerpflegung">Bitte Verpflegungsart w&auml;hlen.</div>
+        </div>
+
+        <!-- Zimmerkategorie — optional (wird ebenfalls in die Nachricht eingefügt) -->
+        <div class="full-width">
+            <label for="zimmer">Wunsch-Zimmer (optional)</label>
+            <select id="zimmer">
+                <option value="">-- Bitte w&auml;hlen --</option>
+                <option value="Doppelzimmer Nordbalkon">Doppelzimmer Nordbalkon</option>
+                <option value="Einzelzimmer S&uuml;dbalkon">Einzelzimmer S&uuml;dbalkon</option>
+                <option value="Doppelzimmer S&uuml;dbalkon">Doppelzimmer S&uuml;dbalkon</option>
+                <option value="Doppelzimmer S&uuml;d Superior">Doppelzimmer S&uuml;d Superior</option>
+                <option value="Suite im Stammhaus S&uuml;dbalkon">Suite im Stammhaus S&uuml;dbalkon</option>
+                <option value="Suite in der Residence">Suite in der Residence</option>
+                <option value="Appartement in der Residence">Appartement in der Residence</option>
+            </select>
+        </div>
+
+        <!-- Personen -->
+        <div class="m-side">
+            <label for="erwachsene">Erwachsene</label>
+            <select name="erwachsene" id="erwachsene">
+                <option value="1">1</option><option value="2" selected="">2</option>
+                <option value="3">3</option><option value="4">4</option>
+                <option value="5">5</option><option value="6">6</option><option value="7">7</option>
+            </select>
+        </div>
+        <div class="m-side">
+            <label for="kCount">Kinder</label>
+            <select id="kCount" name="kinder">
+                <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+                <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+            </select>
+        </div>
+
+        <div id="k1" class="child-age-field m-side"><label class="req">Alter Kind 1</label><input type="number" name="alter_k1" min="0" max="17"></div>
+        <div id="k2" class="child-age-field m-side"><label class="req">Alter Kind 2</label><input type="number" name="alter_k2" min="0" max="17"></div>
+        <div id="k3" class="child-age-field m-side"><label class="req">Alter Kind 3</label><input type="number" name="alter_k3" min="0" max="17"></div>
+        <div id="k4" class="child-age-field m-side"><label class="req">Alter Kind 4</label><input type="number" name="alter_k4" min="0" max="17"></div>
+        <div id="k5" class="child-age-field m-side"><label class="req">Alter Kind 5</label><input type="number" name="alter_k5" min="0" max="17"></div>
+
+        <!-- Kontakt -->
+        <div class="m-side">
+            <label class="req" for="vorname">Vorname</label>
+            <input type="text" id="vorname" name="vorname" required="">
+            <div class="field-error" id="errVorname">Bitte Vorname eingeben.</div>
+        </div>
+        <div class="m-side">
+            <label class="req" for="nachname">Nachname</label>
+            <input type="text" id="nachname" name="nachname" required="">
+            <div class="field-error" id="errNachname">Bitte Nachname eingeben.</div>
+        </div>
+
+        <div class="full-width">
+            <label class="req" for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required="">
+            <div class="field-error" id="errEmail">Bitte g&uuml;ltige E-Mail-Adresse eingeben.</div>
+        </div>
+
+        <div class="full-width">
+            <label class="req">Telefon</label>
+            <div class="phone-row">
+                <select id="phonePrefix" name="phone_prefix">
+                    <option value="0049">&#127465;&#127466; +49</option>
+                    <option value="0043">&#127462;&#127481; +43</option>
+                    <option value="0039">&#127470;&#127481; +39</option>
+                    <option value="0041">&#127464;&#127469; +41</option>
+                    <option value="0031">&#127475;&#127473; +31</option>
+                    <option value="0032">&#127463;&#127466; +32</option>
+                    <option value="0033">&#127467;&#127479; +33</option>
+                    <option value="0044">&#127468;&#127463; +44</option>
+                    <option value="0048">&#127477;&#127473; +48</option>
+                    <option value="0045">&#127465;&#127472; +45</option>
+                    <option value="0046">&#127480;&#127466; +46</option>
+                    <option value="0047">&#127475;&#127476; +47</option>
+                    <option value="00420">&#127464;&#127487; +420</option>
+                    <option value="001">&#127482;&#127480; +1</option>
+                </select>
+                <input type="tel" id="phoneNumber" name="phone_number" placeholder="151 234 56789" inputmode="numeric" pattern="[0-9 ]*">
+            </div>
+            <div class="field-error" id="errTelefon">Bitte Telefonnummer eingeben.</div>
+        </div>
+
+        <div class="full-width">
+            <label for="nachricht">Nachricht (optional)</label>
+            <textarea id="nachricht" name="nachricht" rows="3"></textarea>
+        </div>
+
+        <div class="privacy-row">
+            <input type="checkbox" id="privacy" name="privacy" required="">
+            <label for="privacy">Ich habe die <a href="https://www.heinrichshof.com/de/datenschutzerklaerung" target="_blank">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
+        </div>
+        <div class="field-error full-width" id="errPrivacy" style="margin-top:-8px;">Bitte Datenschutzbestimmungen akzeptieren.</div>
+
+        <div class="success-msg" id="successMsg">&#10003; Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet.<br>Wir melden uns so schnell wie m&ouml;glich pers&ouml;nlich bei Ihnen.</div>
+        <button type="submit" class="submit-btn" id="sBtn">Unverbindliche Anfrage senden</button>
+    </form>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var API_URL    = "https://dashboard.outofthebox-media.com/api/lead";
+    var HOTEL_SLUG = "hotel-heinrichshof";
+    var UTM_KEY    = "guestflow_utm";
+
+    (function captureUtm() {
+        var p=new URLSearchParams(window.location.search),src=p.get("utm_source")||"",med=p.get("utm_medium")||"",gcl=p.get("gclid")||"";
+        if(src||med||gcl){
+            var content=p.get("utm_content")||"",device="";
+            if(content.indexOf("_")!==-1) device=content.substring(content.lastIndexOf("_")+1);
+            try{localStorage.setItem(UTM_KEY,JSON.stringify({utm_source:src,utm_medium:med,utm_campaign:p.get("utm_campaign")||"",utm_term:p.get("utm_term")||"",utm_content:content,device:device,gclid:gcl,gad_source:p.get("gad_source")||"",gad_campaignid:p.get("gad_campaignid")||""}));}catch(e){}
+        }
+    })();
+    function getUtm(){try{return JSON.parse(localStorage.getItem(UTM_KEY)||"{}");}catch(e){return{};}}
+
+    var aP=flatpickr("#ankunft",{locale:"de",dateFormat:"d.m.Y",minDate:"today",onChange:function(d){if(!d[0])return;var next=new Date(d[0]);next.setDate(next.getDate()+1);bP.set("minDate",next);if(!bP.selectedDates[0]||bP.selectedDates[0]<=d[0])bP.setDate(next);}});
+    var bP=flatpickr("#abreise",{locale:"de",dateFormat:"d.m.Y",minDate:"today"});
+
+    document.getElementById("kCount").addEventListener("change",function(){var n=parseInt(this.value);for(var i=1;i<=5;i++){var f=document.getElementById("k"+i),inp=f.querySelector("input");if(i<=n){f.style.display="block";inp.required=true;}else{f.style.display="none";inp.required=false;inp.value="";}}});
+    document.getElementById("phoneNumber").addEventListener("input",function(){this.value=this.value.replace(/[^0-9 ]/g,"");});
+
+    function buildPhone(){var prefix=document.getElementById("phonePrefix").value,number=document.getElementById("phoneNumber").value;number=number.replace(/\s/g,"").replace(/^0+/,"");return prefix+number;}
+    function toIsoDate(raw){if(!raw)return"";var m=raw.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);if(m)return m[3]+"-"+m[2].padStart(2,"0")+"-"+m[1].padStart(2,"0");return raw;}
+    function showError(id,show){var el=document.getElementById(id);if(el)el.style.display=show?"block":"none";}
+    function markField(id,error){var el=document.getElementById(id);if(el){if(error)el.classList.add("error");else el.classList.remove("error");}}
+
+    function validate(){
+        var ok=true;
+        var ankunft=document.getElementById("ankunft").value;showError("errAnkunft",!ankunft);markField("ankunft",!ankunft);if(!ankunft)ok=false;
+        var abreise=document.getElementById("abreise").value;showError("errAbreise",!abreise);markField("abreise",!abreise);if(!abreise)ok=false;
+        var verpf=document.getElementById("verpflegung").value;showError("errVerpflegung",!verpf);markField("verpflegung",!verpf);if(!verpf)ok=false;
+        var vorname=document.getElementById("vorname").value.trim();showError("errVorname",!vorname);markField("vorname",!vorname);if(!vorname)ok=false;
+        var nachname=document.getElementById("nachname").value.trim();showError("errNachname",!nachname);markField("nachname",!nachname);if(!nachname)ok=false;
+        var email=document.getElementById("email").value.trim();var emailOk=email&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);showError("errEmail",!emailOk);markField("email",!emailOk);if(!emailOk)ok=false;
+        var phoneNum=document.getElementById("phoneNumber").value.replace(/\s/g,"");showError("errTelefon",!phoneNum);document.getElementById("phoneNumber").classList.toggle("error",!phoneNum);if(!phoneNum)ok=false;
+        var kinder=parseInt(document.getElementById("kCount").value)||0;
+        for(var i=1;i<=kinder;i++){var ai=document.querySelector("[name='alter_k"+i+"']");var aok=ai&&ai.value!==""&&parseInt(ai.value)>=0;if(ai){if(!aok)ai.classList.add("error");else ai.classList.remove("error");}if(!aok)ok=false;}
+        var privacy=document.getElementById("privacy").checked;showError("errPrivacy",!privacy);if(!privacy)ok=false;
+        return ok;
+    }
+
+    document.getElementById("bookingForm").addEventListener("submit",function(e){
+        e.preventDefault();if(!validate())return;
+        var btn=document.getElementById("sBtn");btn.innerText="Sende…";btn.disabled=true;
+        var kinder=parseInt(document.getElementById("kCount").value)||0,ages=[];
+        for(var i=1;i<=kinder;i++){var v=document.querySelector("[name='alter_k"+i+"']");if(v&&v.value!=="")ages.push(v.value);}
+        var utm=getUtm();
+
+        var verpf   = document.getElementById("verpflegung").value;
+        var zimmer  = document.getElementById("zimmer").value;
+        var freitext= document.getElementById("nachricht").value.trim();
+        var msgParts= [];
+        if(verpf)   msgParts.push("Verpflegung: " + verpf);
+        if(zimmer)  msgParts.push("Zimmer: " + zimmer);
+        if(freitext)msgParts.push(freitext);
+        var messageText = msgParts.join("\n");
+
+        var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:messageText,room_type:zimmer,language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
+        fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
+        .then(function(r){return r.json();})
+        .then(function(data){
+            if(data&&data.success){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"form_lead_success",form_data:{room:payload.room_type,guests:payload.adults,lead_id:data.id,device:payload.device}});document.getElementById("successMsg").style.display="block";btn.style.display="none";try{localStorage.removeItem(UTM_KEY);}catch(e){}}
+            else{alert("Fehler beim Senden. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;}
+        })
+        .catch(function(){alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;});
+    });
+});
+</script>
+    </div>
+    <div id="buchung" class="booking-widget">
+      <div id="Bs-BookingWidget"></div>
+      <script
+      id="booking-suedtirol-js"
+      src="https://widget.bookingsuedtirol.com/v2/bundle.js"
+      defer
+      ></script>
+      <script>
+      document
+        .querySelector("#booking-suedtirol-js")
+        .addEventListener("load", () => {
+          BookingSüdtirol.Widgets.Booking("#Bs-BookingWidget", {
+            id: "863420a7-c404-40f0-82ce-0608a59bca39",
+            propertyId: 10624,
+            lang: "de",
+            privacyURL: "https://www.heinrichshof.com/de/datenschutzerklaerung",
+            termsURL: "https://www.heinrichshof.com/de/wohnen/gut-zu-wissen",
+            onBookingSuccess: (reservation) => {
+              // Called after successful booking
             },
-            events: {
-              submit: function(data) {
-                // dataLayer Push für GTM
-                window.dataLayer = window.dataLayer || [];
-                window.dataLayer.push({
-                  event: 'rg_request_submit',
-                  requestId: data.requestId,
-                  emailAddress: data.emailAddress,
-                  gclid: localStorage.getItem('gclid') || '',
-                  utm_source: localStorage.getItem('utm_source') || '',
-                  utm_medium: localStorage.getItem('utm_medium') || '',
-                  utm_campaign: localStorage.getItem('utm_campaign') || ''
-                });
-              }
-            }
-          };
-          var s = document.createElement("script");
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = window.rgWidgetApi["request"].options.apiBaseUrl + "/public/widget/request.js";
-          var x = document.getElementsByTagName("script")[0];
-          x.parentNode.insertBefore(s, x);
-        })();
+            onEnquirySuccess: (reservation) => {
+              // Called after successful enquiry
+            },
+          });
+        });
       </script>
-      <!-- RG Request Widget END -->
     </div>
   </div>
 </section>
