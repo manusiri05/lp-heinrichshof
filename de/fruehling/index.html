@@ -534,14 +534,22 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("phoneNumber").addEventListener("input",function(){this.value=this.value.replace(/[^0-9 ]/g,"");});
 
     function buildPhone(){var prefix=document.getElementById("phonePrefix").value,number=document.getElementById("phoneNumber").value;number=number.replace(/\s/g,"").replace(/^0+/,"");return prefix+number;}
-    function toIsoDate(raw){if(!raw)return"";var m=raw.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);if(m)return m[3]+"-"+m[2].padStart(2,"0")+"-"+m[1].padStart(2,"0");return raw;}
+    function toIsoDate(raw){
+        if(!raw)return"";
+        var m=raw.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+        if(!m)return/^\d{4}-\d{2}-\d{2}$/.test(raw)?raw:"";
+        var day=parseInt(m[1],10),month=parseInt(m[2],10),year=parseInt(m[3],10);
+        var date=new Date(Date.UTC(year,month-1,day));
+        if(date.getUTCFullYear()!==year||date.getUTCMonth()!==month-1||date.getUTCDate()!==day)return"";
+        return m[3]+"-"+m[2].padStart(2,"0")+"-"+m[1].padStart(2,"0");
+    }
     function showError(id,show){var el=document.getElementById(id);if(el)el.style.display=show?"block":"none";}
     function markField(id,error){var el=document.getElementById(id);if(el){if(error)el.classList.add("error");else el.classList.remove("error");}}
 
     function validate(){
         var ok=true;
-        var ankunft=document.getElementById("ankunft").value;showError("errAnkunft",!ankunft);markField("ankunft",!ankunft);if(!ankunft)ok=false;
-        var abreise=document.getElementById("abreise").value;showError("errAbreise",!abreise);markField("abreise",!abreise);if(!abreise)ok=false;
+        var ankunft=toIsoDate(document.getElementById("ankunft").value);showError("errAnkunft",!ankunft);markField("ankunft",!ankunft);if(!ankunft)ok=false;
+        var abreise=toIsoDate(document.getElementById("abreise").value);var abreiseOk=!!abreise&&(!ankunft||abreise>ankunft);showError("errAbreise",!abreiseOk);markField("abreise",!abreiseOk);if(!abreiseOk)ok=false;
         var verpf=document.getElementById("verpflegung").value;showError("errVerpflegung",!verpf);markField("verpflegung",!verpf);if(!verpf)ok=false;
         var vorname=document.getElementById("vorname").value.trim();showError("errVorname",!vorname);markField("vorname",!vorname);if(!vorname)ok=false;
         var nachname=document.getElementById("nachname").value.trim();showError("errNachname",!nachname);markField("nachname",!nachname);if(!nachname)ok=false;
@@ -571,12 +579,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:messageText,room_type:zimmer,language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
         fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
-        .then(function(r){return r.json();})
+        .then(function(r){return r.text().then(function(text){var data={};try{data=text?JSON.parse(text):{};}catch(e){}if(!r.ok&&!data.error)data.error="HTTP "+r.status;return data;});})
         .then(function(data){
             if(data&&data.success){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"form_lead_success",form_data:{room:payload.room_type,guests:payload.adults,lead_id:data.id,device:payload.device}});document.getElementById("successMsg").style.display="block";btn.style.display="none";try{localStorage.removeItem(UTM_KEY);}catch(e){}}
-            else{alert("Fehler beim Senden. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;}
+            else{var detail=data&&data.error?"\n\nDetails: "+data.error:"";console.error("GuestFlow API error",data);alert("Fehler beim Senden. Bitte versuchen Sie es nochmals."+detail);btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;}
         })
-        .catch(function(){alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;});
+        .catch(function(error){console.error("GuestFlow network error",error);alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;});
     });
 });
 </script>
