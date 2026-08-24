@@ -1,0 +1,15 @@
+{
+  "name": "Der Heinrichshof",
+  "descriptor": "Hotel & Residence · Algund",
+  "address": "Rosengartenstraße 14 · 39022 Algund · Südtirol",
+  "email": "info@heinrichshof.com",
+  "phoneLabel": "+39 0473 222 532",
+  "phoneHref": "+390473222532",
+  "privacyUrl": "https://www.heinrichshof.com/de/datenschutzerklaerung",
+  "cookiesUrl": "https://www.heinrichshof.com/de/information/privacy/3-0.html",
+  "imprintUrl": "https://www.heinrichshof.com/de/information/impressum/2-0.html",
+  "apiUrl": "https://dashboard.outofthebox-media.com/api/lead",
+  "hotelSlug": "hotel-heinrichshof",
+  "bookingPropertyId": 10624,
+  "bookingWidgetId": "863420a7-c404-40f0-82ce-0608a59bca39"
+}

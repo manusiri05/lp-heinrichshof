@@ -1,0 +1,76 @@
+[
+  {
+    "id": "dolce-vita",
+    "title": "Lieblingswochen – Dolce Vita im Heinrichshof",
+    "summary": "Aktive Sommertage im Meraner Land, Südtiroler Genuss und gemeinsame Erlebnisse zwischen Bergwelt, Kultur und Wein.",
+    "image": "https://www.heinrichshof.com/_assets/810d8e76222cdb789f335d52e887aa4d/images/content/5047_desktop_0_0_2100_1400/801cX509c/fileadmin/salescontent/1/bdfa9725-2012-48e4-abab-cbcb350083bb.jpg",
+    "stayFrom": "2026-07-25",
+    "stayTo": "2026-10-10",
+    "displayFrom": "2026-05-01",
+    "displayUntil": "2026-10-10",
+    "price": "ab 165 € pro Person / Nacht",
+    "minNights": 5,
+    "details": [
+      "Willkommensgetränk bei der Anreise",
+      "Tägliches Kuchen- und Strudelbuffet am Nachmittag",
+      "6-gängiges Galadinner am Mittwoch",
+      "Vorspeisenbuffet am Freitag",
+      "Gästewanderung mit dem Reisebus am Dienstag",
+      "SüdtirolPass inklusive",
+      "Abschiedsgeschenk aus der Heinrichshof-Genussmanufaktur"
+    ],
+    "sourceUrl": "https://www.heinrichshof.com/de/wohnen/angebote/angebote-detail/lieblingswochen-dolce-vita-im-heinrichshof",
+    "audiences": ["all"],
+    "seasons": ["sommer", "herbst"],
+    "enabled": true
+  },
+  {
+    "id": "goldener-herbst",
+    "title": "Goldener Herbst – Ihr Törggele-Genuss",
+    "summary": "Goldrote Weinberge, Törggeleabende, Weinfeste und klare Wandertage machen den Südtiroler Herbst besonders genussvoll.",
+    "image": "https://www.heinrichshof.com/_assets/810d8e76222cdb789f335d52e887aa4d/images/content/5049_desktop_0_0_2098_1400/801cX509c/fileadmin/salescontent/1/8d76935d-bcb4-4216-a391-948ef4733750.jpg",
+    "stayFrom": "2026-10-10",
+    "stayTo": "2026-11-08",
+    "displayFrom": "2026-08-20",
+    "displayUntil": "2026-11-08",
+    "price": "ab 149 € pro Person / Nacht",
+    "minNights": 5,
+    "details": [
+      "Willkommensgetränk und 25-€-Massagegutschein pro Zimmer",
+      "Tägliches Kuchen- und Strudelbuffet am Nachmittag",
+      "Galadinner am Mittwoch und Vorspeisenbuffet am Freitag",
+      "Gästewanderung mit Reisebus und SüdtirolPass inklusive",
+      "15.10.: Weinwanderung mit Algunder Winzern",
+      "22.10.: Dolomiten-Rundfahrt mit Karersee, Sellajoch und Picknick",
+      "29.10.: Törggelen mit Schlachtplatte, Kastanien und Livemusik",
+      "05.11.: Törgglefahrt durchs Meraner Land"
+    ],
+    "sourceUrl": "https://www.heinrichshof.com/de/wohnen/angebote/angebote-detail/goldener-herbst-ihr-toerggele-genuss",
+    "audiences": ["all"],
+    "seasons": ["herbst"],
+    "enabled": true
+  },
+  {
+    "id": "winterzauber",
+    "title": "Winterzauber im Heinrichshof",
+    "summary": "Winterliche Spaziergänge, Weihnachtsmarkt, Hüttenzauber und ein festlicher Jahreswechsel in persönlicher Atmosphäre.",
+    "image": "https://www.heinrichshof.com/_assets/810d8e76222cdb789f335d52e887aa4d/images/content/5048_desktop_0_0_2098_1400/801cX509c/fileadmin/salescontent/1/b2221be4-a943-43cc-9d38-1abe33e2b511.jpg",
+    "stayFrom": "2026-12-26",
+    "stayTo": "2027-01-06",
+    "displayFrom": "2026-08-20",
+    "displayUntil": "2027-01-06",
+    "price": "ab 165 € pro Person / Nacht",
+    "minNights": 5,
+    "details": [
+      "28.12.: Spaziergang über den Tappeinerweg zum Meraner Weihnachtsmarkt mit Aperitif",
+      "30.12.: Hüttenzauber mit Rundfahrt, kleiner Wanderung, Einkehr und Livemusik",
+      "31.12.: Festliches Silvester-Galamenü und gemeinsamer Jahreswechsel",
+      "02.01.: Kulinarische Dorfwanderung durch Algund",
+      "04.01.: Winterwanderung in die Südtiroler Bergwelt mit Almeinkehr"
+    ],
+    "sourceUrl": "https://www.heinrichshof.com/de/wohnen/angebote/angebote-detail/winterzauber-im-heinrichshof",
+    "audiences": ["all"],
+    "seasons": ["herbst"],
+    "enabled": true
+  }
+]

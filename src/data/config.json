@@ -1,0 +1,11 @@
+{
+  "seasonMode": "auto",
+  "activeSeason": "herbst",
+  "seasonStarts": {
+    "fruehling": "01-07",
+    "sommer": "06-01",
+    "herbst": "08-20"
+  },
+  "dateOverride": null,
+  "noindex": true
+}

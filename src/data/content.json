@@ -1,0 +1,327 @@
+{
+  "information": {
+    "hotel": {
+      "eyebrow": "Gut zu wissen",
+      "title": "Die wichtigsten Infos für Ihren Urlaub im Heinrichshof",
+      "sections": [
+        {
+          "title": "Lage und Anreise",
+          "blocks": [
+            { "heading": "So finden Sie zum Heinrichshof" },
+            { "label": "Aus Deutschland", "text": "Ab München über die A8/A93 Richtung Kufstein, weiter auf der A12 (Inntalautobahn) bis Brenner. Nach dem Grenzübergang auf die A22 (Brennerautobahn) bis Ausfahrt Bozen-Süd, weiter auf der MEBO bis Ausfahrt Algund. Noch 5 Minuten zum Hotel & Residence Der Heinrichshof, Rosengartenstraße 14." },
+            { "label": "Aus Österreich", "text": "Ab Innsbruck über die A13 (Brennerautobahn) bis Ausfahrt Bozen-Süd, weiter wie oben über MEBO bis Algund oder über den Reschenpass durch das Vinschgau bis nach Algund." },
+            { "label": "Aus der Schweiz", "text": "Über den Reschenpass oder den Ofenpass durch das Vinschgau bis nach Algund." }
+          ]
+        },
+        {
+          "title": "Frühstück und Restaurant",
+          "blocks": [
+            { "text": "Der Tag beginnt mit unserem vitalen Frühstücksbuffet von 7:30 bis 10:30 Uhr – im lichtdurchfluteten Speisesaal oder auf der Panoramaterrasse. Freuen Sie sich auf frisch gebackenes Brot, hausgemachte Marmeladen und Kuchen, Obst, Südtiroler Speck, Käse, Bio-Joghurt, Müsli, Eier nach Wunsch sowie Tee- und Kaffeespezialitäten." },
+            { "text": "Am Abend verbindet unser Menü mediterrane Leichtigkeit mit authentischen Südtiroler Aromen. Das Abendessen ist für Gäste mit Halbpension verfügbar." }
+          ]
+        },
+        {
+          "title": "Inklusivleistungen",
+          "blocks": [
+            { "heading": "Kostenlos, aber unbezahlbar" },
+            { "items": [
+              "Kostenfreie Nutzung von Hallen- und Freibad sowie Whirlpool",
+              "Zugang zur neuen alpinen Saunalandschaft mit Biosauna, finnischer Sauna und Aromadampfbad",
+              "Wellness-Tasche mit Bademantel, Hausschuhen und Hand- und Badetüchern",
+              "Wöchentliches Aktivprogramm mit geführten Wanderungen, Ausflügen und Verkostungen",
+              "Gratis WLAN und kostenloser Parkplatz direkt am Hotel",
+              "Kostenloser Fahrradverleih, E-Bikes gegen Gebühr",
+              "AlgundCard mit kostenlosem öffentlichem Nahverkehr"
+            ] }
+          ]
+        },
+        {
+          "title": "Good To Know",
+          "blocks": [
+            { "items": [
+              { "label": "Check-in", "text": "ab 15:00 Uhr; Online-Check-in per Link in der Buchungsbestätigung" },
+              { "label": "Check-out", "text": "bis 11:00 Uhr" },
+              { "label": "Ortstaxe", "text": "€ 3,10 pro Person/Nacht; Kinder unter 14 Jahren sind befreit" },
+              { "label": "Anzahlung", "text": "30 % des Gesamtbetrags, erstattbar innerhalb der kostenlosen Stornierungsfrist" }
+            ] },
+            { "heading": "Stornobedingungen" },
+            { "items": [
+              "Bis 3 Wochen vor Anreise: kostenlos",
+              "20 bis 7 Tage vor Anreise: 50 % des Gesamtbetrags",
+              "Weniger als 7 Tage, No-Show oder vorzeitige Abreise: 100 % des Gesamtbetrags"
+            ] }
+          ]
+        },
+        {
+          "title": "AlgundCard",
+          "blocks": [
+            { "text": "Als Gast im Heinrichshof erhalten Sie die AlgundCard kostenfrei und erkunden Südtirol flexibel ohne zusätzliche Fahrtkosten." },
+            { "items": [
+              "Kostenlose Nutzung der öffentlichen Verkehrsmittel in ganz Südtirol",
+              "Kostenfreie Nutzung ausgewählter Seilbahnen und Bergbahnen",
+              "Freier Eintritt in zahlreiche Museen in Südtirol",
+              "Saisonale Rabatte für Ausflugsziele, Verkostungen und geführte Touren"
+            ] }
+          ]
+        }
+      ]
+    },
+    "apartment": {
+      "eyebrow": "Gut vorbereitet",
+      "title": "Die wichtigsten Infos für Ihren Urlaub im Heinrichshof",
+      "sections": [
+        {
+          "title": "Lage und Anreise",
+          "blocks": [
+            { "heading": "So finden Sie zum Heinrichshof" },
+            { "label": "Aus Deutschland", "text": "Ab München über die A8/A93 Richtung Kufstein, weiter auf der A12 (Inntalautobahn) bis Brenner. Nach dem Grenzübergang auf die A22 (Brennerautobahn) bis Ausfahrt Bozen-Süd, weiter auf der MEBO bis Ausfahrt Algund. Noch 5 Minuten zum Hotel und Residence Der Heinrichshof, Rosengartenstraße 14." },
+            { "label": "Aus Österreich", "text": "Ab Innsbruck über die A13 (Brennerautobahn) bis Ausfahrt Bozen-Süd, weiter wie oben über MEBO bis Algund oder über den Reschenpass durch das Vinschgau bis nach Algund." },
+            { "label": "Aus der Schweiz", "text": "Über den Reschenpass oder den Ofenpass durch das Vinschgau bis nach Algund." }
+          ]
+        },
+        {
+          "title": "Inklusivleistungen",
+          "blocks": [
+            { "heading": "Inklusivleistungen – kostenlos, aber unbezahlbar" },
+            { "items": [
+              "Kostenfreie Nutzung von Hallen- und Freibad sowie Whirlpool",
+              "Zugang zur neuen alpinen Saunalandschaft mit Biosauna, finnischer Sauna und Aromadampfbad",
+              "Wellness-Tasche mit Bademantel, Hausschuhen und Badetüchern",
+              "Geschirr- und Handtücher",
+              "Tägliche Reinigung des Appartements auf Wunsch und Wäscheservice",
+              "Brötchenservice",
+              "Kuchenbuffet am Nachmittag",
+              "Wöchentliches Aktivprogramm: geführte Wanderungen, Ausflüge und Verkostungen",
+              "Gratis WLAN",
+              "Kostenloser Fahrradverleih, E-Bikes gegen Gebühr",
+              "AlgundCard: kostenloser öffentlicher Nahverkehr"
+            ] }
+          ]
+        },
+        {
+          "title": "Good To Know",
+          "blocks": [
+            { "items": [
+              { "label": "Check-in", "text": "ab 15:00 Uhr; Online-Check-in per Link in der Buchungsbestätigung" },
+              { "label": "Check-out", "text": "bis 11:00 Uhr" },
+              { "label": "Ortstaxe", "text": "€ 3,40 pro Person/Nacht; Kinder unter 14 Jahren sind befreit" },
+              { "label": "Anzahlung", "text": "30 % des Gesamtbetrags, erstattbar innerhalb der kostenlosen Stornierungsfrist" }
+            ] },
+            { "heading": "Stornobedingungen" },
+            { "items": [
+              "Bis 3 Wochen vor Anreise: kostenlos",
+              "20 bis 7 Tage vor Anreise: 50 % des Gesamtbetrags",
+              "Weniger als 7 Tage, No-Show oder vorzeitige Abreise: 100 % des Gesamtbetrags",
+              "Im Falle einer Stornierung innerhalb unserer kostenlosen Stornierungsfrist erstatten wir auch die Anzahlung komplett zurück."
+            ] }
+          ]
+        }
+      ]
+    },
+    "dog": {
+      "eyebrow": "Gemeinsam gut vorbereitet",
+      "title": "Die wichtigsten Infos für Ihren Urlaub im Heinrichshof",
+      "sections": [
+        {
+          "title": "Reisen mit Hund",
+          "blocks": [
+            { "heading": "Das sollten Sie wissen, wenn Sie mit Hund reisen" },
+            { "items": [
+              { "label": "Maulkorbpflicht", "text": "In Bus, Bahn und Seilbahnen besteht Maulkorbpflicht. Bitte bringen Sie einen passenden Maulkorb mit." },
+              { "label": "Ticketpflicht", "text": "Auch Ihr Hund benötigt ein Ticket für Bus und Bahn." },
+              { "label": "Anleinpflicht", "text": "Bitte halten Sie Ihren Hund im Hotelbereich stets an der Leine." },
+              { "label": "Gemeinschaftsbereiche", "text": "Im Speisesaal, während der Mahlzeiten auf der Terrasse sowie im Hallenbad sind Hunde nicht vorgesehen. Auf die Liegewiese, außerhalb der Essenszeiten auf die Terrasse und in die Bar darf Ihr Vierbeiner Sie begleiten." },
+              { "label": "Hund allein im Zimmer", "text": "Bitte hängen Sie das Hund-im-Zimmer-Schild an die Tür, wenn Ihr Hund kurz alleine bleibt." },
+              { "label": "Pfoten sauber halten", "text": "Auf Wunsch stellen wir Ihnen gerne eigene Handtücher für Ihren Hund zur Verfügung." }
+            ] },
+            { "heading": "Kosten für Ihren vierbeinigen Begleiter" },
+            { "items": ["Suite oder Appartement: € 25 pro Nacht", "Zimmer im Stammhaus: € 20 pro Nacht"] },
+            { "heading": "Reisehinweise für Südtirol" },
+            { "items": [
+              "EU-Heimtierpass mit den erforderlichen Einträgen",
+              "Tätowierung oder Mikrochip zur eindeutigen Identifizierung",
+              "Gültige Tollwut-Schutzimpfung; mindestens 21 Tage und maximal ein Jahr vor der Einreise"
+            ] }
+          ]
+        },
+        {
+          "title": "Lage und Anreise",
+          "blocks": [
+            { "heading": "So finden Sie zum Heinrichshof" },
+            { "label": "Aus Deutschland", "text": "Ab München über die A8/A93 Richtung Kufstein, weiter auf der A12 bis Brenner. Über die A22 bis Bozen-Süd und anschließend über die MEBO bis Algund. Vom Ort sind es noch etwa 5 Minuten zum Heinrichshof." },
+            { "label": "Aus Österreich", "text": "Ab Innsbruck über die A13 bis Bozen-Süd und anschließend über die MEBO nach Algund oder über den Reschenpass durch das Vinschgau." },
+            { "label": "Aus der Schweiz", "text": "Über den Reschenpass oder den Ofenpass durch das Vinschgau bis nach Algund." }
+          ]
+        },
+        {
+          "title": "Frühstück und Restaurant",
+          "blocks": [
+            { "text": "Das vitale Frühstücksbuffet wird von 7:30 bis 10:30 Uhr serviert. Am Abend verbindet unser Menü mediterrane Leichtigkeit mit Südtiroler Aromen." },
+            { "text": "Hunde sind im Speisesaal sowie während der Mahlzeiten auf der Terrasse nicht vorgesehen. In der Bar und außerhalb der Essenszeiten auf der Terrasse sind sie willkommen." }
+          ]
+        },
+        {
+          "title": "Inklusivleistungen",
+          "blocks": [
+            { "items": [
+              "Kostenfreie Nutzung von Hallen- und Freibad sowie Whirlpool für die menschlichen Gäste",
+              "Zugang zur neuen alpinen Saunalandschaft",
+              "Wellness-Tasche mit Bademantel, Hausschuhen und Badetüchern",
+              "Aktivprogramm, Gratis WLAN und kostenloser Parkplatz",
+              "AlgundCard mit kostenlosem öffentlichem Nahverkehr"
+            ] }
+          ]
+        },
+        {
+          "title": "Good To Know",
+          "blocks": [
+            { "items": [
+              { "label": "Hund", "text": "auf Anfrage; € 25 pro Nacht in Suiten/Appartements und € 20 pro Nacht in Zimmern des Stammhauses" },
+              { "label": "Check-in", "text": "ab 15:00 Uhr" },
+              { "label": "Check-out", "text": "bis 11:00 Uhr" },
+              { "label": "Ortstaxe", "text": "€ 3,10 pro Person/Nacht; Kinder unter 14 Jahren sind befreit" },
+              { "label": "Anzahlung", "text": "30 % des Gesamtbetrags, erstattbar innerhalb der kostenlosen Stornierungsfrist" }
+            ] },
+            { "heading": "Stornobedingungen" },
+            { "items": [
+              "Bis 3 Wochen vor Anreise: kostenlos",
+              "20 bis 7 Tage vor Anreise: 50 % des Gesamtbetrags",
+              "Weniger als 7 Tage, No-Show oder vorzeitige Abreise: 100 % des Gesamtbetrags"
+            ] }
+          ]
+        },
+        {
+          "title": "AlgundCard",
+          "blocks": [
+            { "text": "Mit der kostenlosen AlgundCard nutzen Sie Südtirols öffentliche Verkehrsmittel und viele ausgewählte Bergbahnen ohne zusätzliche Kosten. Bitte beachten Sie, dass Ihr Hund in Bus und Bahn ein eigenes Ticket sowie einen Maulkorb benötigt." }
+          ]
+        }
+      ]
+    }
+  },
+  "expectations": {
+    "apartment": {
+      "eyebrow": "Ferienwohnung mit Hotelkomfort",
+      "title": "Algund im {season}: Was Sie in Ihrer Ferienwohnung erwartet",
+      "intro": "Wir wissen, dass Sie Ruhe und Freiheit suchen. In unseren Ferienwohnungen in Algund finden Sie dafür den passenden Rückzugsort.",
+      "columns": [
+        {
+          "title": "Sie erwartet",
+          "tone": "positive",
+          "items": [
+            "Großzügige Appartements für 2 bis 6 Personen",
+            "Küchenzeile, Wohnraum, Loggia, Schlafzimmer, Kinderschlafzimmer, Bad/WC und Ankleidezimmer sowie SAT-TV und Tablet",
+            "Tägliche Reinigung auf Wunsch",
+            "Vollständig klimatisiert",
+            "Kostenloser Tiefgaragenstellplatz",
+            "Ladestation für E-Autos",
+            "Große Liegewiese, Zugang zu SPA, Massagen und Pools",
+            "Haustierfreundlich, € 25 pro Nacht"
+          ]
+        }
+      ]
+    },
+    "dog": {
+      "eyebrow": "Urlaub für Zwei- und Vierbeiner",
+      "title": "Algund im {season} mit Hund: Was Sie erwartet",
+      "intro": "Sie suchen Ruhe und möchten Ihren Vierbeiner mitbringen. In Algund finden Sie genau die richtige Mischung aus Natur, Genuss und klaren Regeln.",
+      "columns": [
+        {
+          "title": "Sie erwartet",
+          "tone": "positive",
+          "items": [
+            "Angenehme Temperaturen und Spazierwege direkt rund um Algund",
+            "Ein herzliches Willkommen und eine passende Zimmerkategorie für Sie und Ihren Hund",
+            "Eine persönliche, ruhige Atmosphäre sowie Wellness für die Menschen"
+          ]
+        },
+        {
+          "title": "Sie erwartet nicht",
+          "tone": "negative",
+          "items": [
+            "Ein anonymes Hundehotel mit Massenbetrieb",
+            "Unklare Regeln in Restaurant und Wellnessbereich",
+            "Lange Autofahrten vor jeder gemeinsamen Gassirunde"
+          ]
+        }
+      ]
+    }
+  },
+  "rooms": {
+    "hotel": {
+      "eyebrow": "Wohnen im Heinrichshof",
+      "title": "Zimmer & Suiten mit viel Ruhe",
+      "intro": "Vom gemütlichen Doppelzimmer bis zur großzügigen Residence-Suite – wählen Sie den Rückzugsort, der zu Ihrer Reise passt.",
+      "items": [
+        { "image": "room-nord.jpg", "title": "Doppelzimmer Nordbalkon", "meta": "20–23 m² · 2 Personen", "price": "ab 145 € pro Person inkl. Frühstück" },
+        { "image": "room-sued.jpg", "title": "Doppelzimmer Südbalkon", "meta": "20 m² · 2 Personen", "price": "ab 155 € pro Person inkl. Frühstück" },
+        { "image": "suite-stammhaus.jpg", "title": "Suite im Stammhaus", "meta": "32–40 m² · 2–4 Personen", "price": "ab 195 € pro Person inkl. Frühstück" },
+        { "image": "suite-residence.jpg", "title": "Suite in der Residence", "meta": "55 m² · 2–6 Personen", "price": "ab 210 € pro Person inkl. Frühstück" }
+      ]
+    },
+    "apartment": {
+      "eyebrow": "Ein Blick ins Urlaubsglück",
+      "title": "Appartement in der Residence",
+      "intro": "55 m² Freiheit mit privater Loggia, separaten Schlafräumen und Hotelkomfort direkt nebenan.",
+      "items": [
+        {
+          "image": "apartment-1.jpg",
+          "title": "Appartement in der Residence",
+          "meta": "2–6 Personen · 55 m²",
+          "price": "ab 327 € pro Appartement",
+          "description": "Lichtdurchfluteter Wohnraum mit SAT-TV, Radio, Tablet und WLAN, Doppelzimmer mit Boxspringbetten, separates Kinderzimmer, Küchenzeile, Bad und begehbarer Kleiderschrank.",
+          "details": [
+            "Abendessen flexibel dazubuchbar: € 40 Erwachsene / € 20 Kinder von 6 bis 14 Jahren; Anmeldung bis 11:00 Uhr am selben Tag",
+            "Frühstück nach Verfügbarkeit: € 25 Erwachsene / € 15 Kinder von 6 bis 14 Jahren; Anmeldung am Vortag",
+            "Brötchenservice bequem bis zum Vorabend per Tablet bestellbar"
+          ],
+          "url": "https://www.heinrichshof.com/de/wohnen/appartements/appartement-detail/appartement-in-der-residence"
+        }
+      ]
+    }
+  },
+  "galleries": {
+    "hotel": {
+      "eyebrow": "Einblicke",
+      "title": "Der Heinrichshof in Bildern",
+      "items": [
+        { "image": "liegewiese-2.jpg", "alt": "Hotel und Residence Der Heinrichshof aus der Vogelperspektive" },
+        { "image": "liegewiese-1.jpg", "alt": "Liegewiese und Außenbereich im Heinrichshof" },
+        { "image": "hero.jpg", "alt": "Panorama am Hotel und Residence Der Heinrichshof" },
+        { "image": "room-sued.jpg", "alt": "Doppelzimmer mit Südbalkon" },
+        { "image": "haus-1.jpg", "alt": "Heller Wohnbereich in der Residence" },
+        { "image": "terrasse.jpg", "alt": "Panoramaterrasse des Heinrichshof" },
+        { "image": "pool.jpg", "alt": "Pool und Wellness im Heinrichshof" },
+        { "image": "garten.jpg", "alt": "Garten des Heinrichshof" },
+        { "image": "naturesauna.jpg", "alt": "Nature Sauna im Wellnessbereich" },
+        { "image": "spa-sauna-panorama.jpg", "alt": "Alpine Saunalandschaft" },
+        { "image": "fotos-9.jpg", "alt": "Stilvolles Zimmer im Heinrichshof" },
+        { "image": "eiswasserfall.jpg", "alt": "Eiswasserfall in der Wellnesswelt" }
+      ]
+    },
+    "apartment": {
+      "eyebrow": "Einblicke",
+      "title": "Ein Blick ins Urlaubsglück",
+      "items": [
+        { "image": "apartment-1.jpg", "alt": "Appartement in der Residence" },
+        { "image": "apartment-kueche.jpg", "alt": "Küchenzeile im Appartement" },
+        { "image": "apartment-3.jpg", "alt": "Wohnraum im Appartement" },
+        { "image": "apartment-4.jpg", "alt": "Schlafbereich im Appartement" },
+        { "image": "spa-sauna-panorama.jpg", "alt": "Wellnessbereich für Residence-Gäste" },
+        { "image": "pool.jpg", "alt": "Pools im Heinrichshof" }
+      ]
+    },
+    "dog": {
+      "eyebrow": "Einblicke",
+      "title": "Gemeinsame Lieblingsplätze",
+      "items": [
+        { "image": "herbst-waalweg.jpg", "alt": "Spazierweg im herbstlichen Algund" },
+        { "image": "garten.jpg", "alt": "Garten und Liegewiese im Heinrichshof" },
+        { "image": "room-nord.jpg", "alt": "Zimmer mit Balkon" },
+        { "image": "herbst-ruecksack.jpg", "alt": "Wanderurlaub in Algund" },
+        { "image": "pool.jpg", "alt": "Wellness für die menschlichen Gäste" },
+        { "image": "herbst-panorama.jpg", "alt": "Panorama über das Meraner Land" }
+      ]
+    }
+  }
+}

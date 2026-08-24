@@ -1,0 +1,526 @@
+{
+  "de": {
+    "dateLocale": "de-DE",
+    "descriptor": "Hotel & Residence · Algund",
+    "links": {
+      "privacy": "https://www.heinrichshof.com/de/datenschutzerklaerung",
+      "cookies": "https://www.heinrichshof.com/de/information/privacy/3-0.html",
+      "imprint": "https://www.heinrichshof.com/de/information/impressum/2-0.html"
+    },
+    "ui": {
+      "request": "Jetzt anfragen",
+      "requestNonBinding": "Unverbindlich anfragen",
+      "book": "Direkt buchen",
+      "discoverOffers": "Angebote entdecken",
+      "personalOffer": "Persönliches Angebot erhalten",
+      "highlightsEyebrow": "Was Sie erwartet",
+      "highlightsTitle": "Drei gute Gründe, länger zu bleiben.",
+      "seasonOffers": "Passende Angebote",
+      "offersEyebrow": "Aktuell buchbar",
+      "offersTitle": "Zeit für Vorfreude.",
+      "offersLead": "Ausgewählte Pauschalen für Ihre Auszeit im Heinrichshof.",
+      "offerDetails": "Inklusivleistungen & Programm",
+      "offerRequest": "Anfragen",
+      "noOffers": "Aktuell sind keine festen Pauschalen veröffentlicht. Gerne erstellen wir ein persönliches Angebot.",
+      "from": "ab",
+      "nights": "Nächten",
+      "roomPrevious": "Vorheriges Zimmer",
+      "roomNext": "Nächstes Zimmer",
+      "roomDetails": "Details",
+      "galleryPrevious": "Vorheriges Bild",
+      "galleryNext": "Nächstes Bild",
+      "gallerySwipe": "Seitlich wischen für mehr Bilder",
+      "storyCta": "Urlaub anfragen",
+      "requestEyebrow": "Unverbindliche Anfrage",
+      "requestTitle": "Ihr Urlaub beginnt mit ein paar Zeilen.",
+      "requestLead": "Sagen Sie uns, wann und wie Sie reisen möchten. Wir melden uns mit einem persönlich zusammengestellten Angebot.",
+      "bookingEyebrow": "Direkt buchen",
+      "bookingTitle": "Direkt buchen & sparen.",
+      "bookingLoading": "Online-Buchung wird geladen …",
+      "trustOneTitle": "4 Sterne Superior",
+      "trustOneText": "Persönlich geführt",
+      "trustTwoTitle": "9,2 / 10",
+      "trustTwoText": "Booking.com",
+      "trustThreeTitle": "AlgundCard inklusive",
+      "trustThreeText": "Mobil in ganz Südtirol",
+      "form": {
+        "arrival": "Ankunft",
+        "departure": "Abreise",
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "adults": "Erwachsene",
+        "children": "Kinder",
+        "board": "Verpflegung",
+        "boardPlaceholder": "Bitte wählen",
+        "breakfast": "Zimmer mit Frühstück",
+        "halfBoard": "Halbpension",
+        "noBoard": "Übernachtung ohne Verpflegung",
+        "room": "Zimmerwunsch",
+        "roomOpen": "Noch offen",
+        "doubleRoom": "Doppelzimmer",
+        "suite": "Suite",
+        "apartment": "Appartement",
+        "message": "Wünsche oder Fragen",
+        "privacyBefore": "Ich habe die",
+        "privacyLink": "Datenschutzbestimmungen",
+        "privacyAfter": "gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung der Anfrage zu.",
+        "submit": "Unverbindlich anfragen"
+      },
+      "cookies": "Cookies",
+      "privacy": "Datenschutz",
+      "imprint": "Impressum"
+    }
+  },
+  "en": {
+    "dateLocale": "en-GB",
+    "descriptor": "Hotel & Residence · Lagundo",
+    "links": {
+      "privacy": "https://www.heinrichshof.com/en/information/privacy/3-0.html",
+      "cookies": "https://www.heinrichshof.com/en/information/privacy/3-0.html",
+      "imprint": "https://www.heinrichshof.com/en/information/credits/2-0.html"
+    },
+    "ui": {
+      "request": "Request an offer",
+      "requestNonBinding": "Request an offer",
+      "book": "Book direct",
+      "discoverOffers": "Discover offers",
+      "personalOffer": "Receive a personal offer",
+      "highlightsEyebrow": "What awaits you",
+      "highlightsTitle": "Three reasons to stay a little longer.",
+      "seasonOffers": "Matching offers",
+      "offersEyebrow": "Currently available",
+      "offersTitle": "Time to look forward to your stay.",
+      "offersLead": "Selected packages for your break at Der Heinrichshof.",
+      "offerDetails": "Included services & programme",
+      "offerRequest": "Enquire",
+      "noOffers": "There are currently no fixed packages online. We will gladly prepare a personal offer.",
+      "from": "from",
+      "nights": "nights",
+      "roomPrevious": "Previous room",
+      "roomNext": "Next room",
+      "roomDetails": "Details",
+      "galleryPrevious": "Previous image",
+      "galleryNext": "Next image",
+      "gallerySwipe": "Swipe sideways for more images",
+      "storyCta": "Request your holiday",
+      "requestEyebrow": "No-obligation enquiry",
+      "requestTitle": "Your holiday starts with a few details.",
+      "requestLead": "Tell us when and how you would like to travel. We will reply with a personally prepared offer.",
+      "bookingEyebrow": "Book direct",
+      "bookingTitle": "Book direct & save.",
+      "bookingLoading": "Online booking is loading …",
+      "trustOneTitle": "4-star superior",
+      "trustOneText": "Personally managed",
+      "trustTwoTitle": "9.2 / 10",
+      "trustTwoText": "Booking.com",
+      "trustThreeTitle": "AlgundCard included",
+      "trustThreeText": "Travel throughout South Tyrol",
+      "form": {
+        "arrival": "Arrival",
+        "departure": "Departure",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "Email",
+        "phone": "Telephone",
+        "adults": "Adults",
+        "children": "Children",
+        "board": "Board",
+        "boardPlaceholder": "Please select",
+        "breakfast": "Room with breakfast",
+        "halfBoard": "Half board",
+        "noBoard": "Accommodation only",
+        "room": "Preferred room",
+        "roomOpen": "Still open",
+        "doubleRoom": "Double room",
+        "suite": "Suite",
+        "apartment": "Apartment",
+        "message": "Requests or questions",
+        "privacyBefore": "I have read the",
+        "privacyLink": "privacy policy",
+        "privacyAfter": "and consent to the processing of my data for this enquiry.",
+        "submit": "Send no-obligation enquiry"
+      },
+      "cookies": "Cookies",
+      "privacy": "Privacy policy",
+      "imprint": "Credits"
+    },
+    "seasons": {
+      "herbst": { "label": "Autumn in Lagundo", "title": "Golden days. Clear views. Pure enjoyment.", "text": "When the vineyards turn golden and the air becomes crisp, Lagundo shows its most enjoyable side – ideal for panoramic walks, South Tyrolean food and quiet hours in the warm spa.", "image": "herbst-kirche-reben.jpg" },
+      "sommer": { "label": "Summer in Lagundo", "title": "Between palm trees, alpine pastures and pool moments.", "text": "Head into the mountains early, unwind by the pool in the afternoon and enjoy the view across Merano in the evening.", "image": "paket-sommer.jpg" },
+      "fruehling": { "label": "Spring in Lagundo", "title": "Apple blossom and the first warm sunshine.", "text": "While snow still covers the peaks, blossom fills the valley – a peaceful season for walks, fine food and new energy.", "image": "apfelbluete.jpg" }
+    },
+    "information": {
+      "hotel": {
+        "eyebrow": "Good to know",
+        "title": "The most important information for your stay",
+        "sections": [
+          { "title": "Location and arrival", "blocks": [
+            { "heading": "How to reach Der Heinrichshof" },
+            { "label": "From Germany or Austria", "text": "Take the motorway via Innsbruck and the Brenner Pass to Bolzano South. Continue on the MEBO dual carriageway to the Lagundo exit. From there it is about five minutes to Der Heinrichshof, Rosengartenstraße 14." },
+            { "label": "From Switzerland", "text": "Travel via the Reschen Pass or Ofen Pass through the Venosta Valley to Lagundo." }
+          ] },
+          { "title": "Breakfast and restaurant", "blocks": [
+            { "text": "Start the day with our vitality breakfast buffet from 7:30 to 10:30 am, served in the bright dining room or on the panoramic terrace." },
+            { "text": "In the evening, our menu combines Mediterranean lightness with authentic South Tyrolean flavours. Dinner is available for half-board guests." }
+          ] },
+          { "title": "Included services", "blocks": [
+            { "items": ["Indoor and outdoor pool plus whirlpool", "New alpine sauna area", "Wellness bag with bathrobe, slippers and towels", "Weekly activity programme", "Wi-Fi and parking", "AlgundCard with free public transport"] }
+          ] },
+          { "title": "Good to know", "blocks": [
+            { "items": [
+              { "label": "Check-in", "text": "from 3:00 pm" },
+              { "label": "Check-out", "text": "until 11:00 am" },
+              { "label": "Tourist tax", "text": "€3.10 per person/night; children under 14 are exempt" },
+              { "label": "Deposit", "text": "30% of the total amount, refundable within the free cancellation period" }
+            ] },
+            { "heading": "Cancellation terms" },
+            { "items": ["Up to 3 weeks before arrival: free of charge", "20 to 7 days before arrival: 50%", "Less than 7 days, no-show or early departure: 100%"] }
+          ] },
+          { "title": "AlgundCard", "blocks": [
+            { "text": "The complimentary AlgundCard gives you flexible access to public transport, selected cable cars and numerous museums throughout South Tyrol." }
+          ] }
+        ]
+      }
+    },
+    "rooms": {
+      "hotel": {
+        "eyebrow": "Stay at Der Heinrichshof",
+        "title": "Rooms and suites designed for peace and quiet",
+        "intro": "From cosy double rooms to spacious residence suites – choose the retreat that suits your journey.",
+        "items": [
+          { "image": "room-nord.jpg", "title": "Double room with north-facing balcony", "meta": "20–23 m² · 2 guests", "price": "from €145 per person incl. breakfast" },
+          { "image": "room-sued.jpg", "title": "Double room with south-facing balcony", "meta": "20 m² · 2 guests", "price": "from €155 per person incl. breakfast" },
+          { "image": "suite-stammhaus.jpg", "title": "Suite in the main building", "meta": "32–40 m² · 2–4 guests", "price": "from €195 per person incl. breakfast" },
+          { "image": "suite-residence.jpg", "title": "Suite in the Residence", "meta": "55 m² · 2–6 guests", "price": "from €210 per person incl. breakfast" }
+        ]
+      }
+    },
+    "galleries": {
+      "hotel": {
+        "eyebrow": "Impressions",
+        "title": "Discover Der Heinrichshof",
+        "items": [
+          { "image": "liegewiese-2.jpg", "alt": "Der Heinrichshof and its gardens in Lagundo" },
+          { "image": "liegewiese-1.jpg", "alt": "Sunbathing lawn at Der Heinrichshof" },
+          { "image": "hero.jpg", "alt": "Panoramic view across the Merano region" },
+          { "image": "room-sued.jpg", "alt": "Double room with south-facing balcony" },
+          { "image": "haus-1.jpg", "alt": "Suite living area" },
+          { "image": "terrasse.jpg", "alt": "Panoramic terrace" },
+          { "image": "pool.jpg", "alt": "Indoor pool and wellness" },
+          { "image": "garten.jpg", "alt": "Garden at Der Heinrichshof" },
+          { "image": "naturesauna.jpg", "alt": "Natural sauna" },
+          { "image": "spa-sauna-panorama.jpg", "alt": "Alpine sauna landscape" },
+          { "image": "fotos-9.jpg", "alt": "Room in the Residence" },
+          { "image": "eiswasserfall.jpg", "alt": "Ice fountain in the spa" }
+        ]
+      }
+    },
+    "offers": {
+      "dolce-vita": { "title": "Favourite Weeks – Dolce Vita at Der Heinrichshof", "summary": "Active summer days, South Tyrolean cuisine and shared experiences between mountains, culture and wine.", "price": "from €165 per person/night", "details": ["Welcome drink", "Daily cake and strudel buffet", "Gala dinner and starter buffet", "Guided guest hike", "South Tyrol Pass included"] },
+      "goldener-herbst": { "title": "Golden Autumn – South Tyrolean flavours", "summary": "Golden vineyards, traditional autumn evenings, wine festivals and clear hiking days.", "price": "from €149 per person/night", "details": ["Welcome drink and €25 massage voucher per room", "Daily cake and strudel buffet", "Gala dinner and guided hike", "Wine walk and traditional Törggelen events", "South Tyrol Pass included"] },
+      "winterzauber": { "title": "Winter Magic at Der Heinrichshof", "summary": "Winter walks, Christmas markets, mountain huts and a festive New Year in a personal atmosphere.", "price": "from €165 per person/night", "details": ["Walk to the Merano Christmas market", "Festive New Year's Eve gala dinner", "Culinary village walk", "Winter hike with an alpine hut stop"] }
+    }
+  },
+  "it": {
+    "dateLocale": "it-IT",
+    "descriptor": "Hotel & Residence · Lagundo",
+    "links": {
+      "privacy": "https://www.heinrichshof.com/it/informazione/privacy/3-0.html",
+      "cookies": "https://www.heinrichshof.com/it/informazione/privacy/3-0.html",
+      "imprint": "https://www.heinrichshof.com/it/informazione/credits/2-0.html"
+    },
+    "ui": {
+      "request": "Richiedi un'offerta",
+      "requestNonBinding": "Richiedi un'offerta",
+      "book": "Prenota direttamente",
+      "discoverOffers": "Scopri le offerte",
+      "personalOffer": "Ricevi un'offerta personale",
+      "highlightsEyebrow": "Cosa vi aspetta",
+      "highlightsTitle": "Tre motivi per fermarsi un po' più a lungo.",
+      "seasonOffers": "Offerte adatte",
+      "offersEyebrow": "Ora prenotabili",
+      "offersTitle": "È tempo di pregustare la vacanza.",
+      "offersLead": "Pacchetti selezionati per il vostro soggiorno al Heinrichshof.",
+      "offerDetails": "Servizi inclusi e programma",
+      "offerRequest": "Richiedi",
+      "noOffers": "Al momento non sono pubblicati pacchetti fissi. Saremo lieti di preparare un'offerta personale.",
+      "from": "da",
+      "nights": "notti",
+      "roomPrevious": "Camera precedente",
+      "roomNext": "Camera successiva",
+      "roomDetails": "Dettagli",
+      "galleryPrevious": "Immagine precedente",
+      "galleryNext": "Immagine successiva",
+      "gallerySwipe": "Scorrete lateralmente per altre immagini",
+      "storyCta": "Richiedi la vacanza",
+      "requestEyebrow": "Richiesta non vincolante",
+      "requestTitle": "La vostra vacanza inizia con poche righe.",
+      "requestLead": "Comunicateci quando e come desiderate viaggiare. Vi risponderemo con un'offerta preparata personalmente.",
+      "bookingEyebrow": "Prenota direttamente",
+      "bookingTitle": "Prenota direttamente e risparmia.",
+      "bookingLoading": "Il sistema di prenotazione si sta caricando …",
+      "trustOneTitle": "4 stelle superior",
+      "trustOneText": "Gestione familiare",
+      "trustTwoTitle": "9,2 / 10",
+      "trustTwoText": "Booking.com",
+      "trustThreeTitle": "AlgundCard inclusa",
+      "trustThreeText": "Mobilità in tutto l'Alto Adige",
+      "form": {
+        "arrival": "Arrivo",
+        "departure": "Partenza",
+        "firstName": "Nome",
+        "lastName": "Cognome",
+        "email": "E-mail",
+        "phone": "Telefono",
+        "adults": "Adulti",
+        "children": "Bambini",
+        "board": "Trattamento",
+        "boardPlaceholder": "Selezionare",
+        "breakfast": "Camera con colazione",
+        "halfBoard": "Mezza pensione",
+        "noBoard": "Solo pernottamento",
+        "room": "Camera desiderata",
+        "roomOpen": "Ancora da scegliere",
+        "doubleRoom": "Camera doppia",
+        "suite": "Suite",
+        "apartment": "Appartamento",
+        "message": "Desideri o domande",
+        "privacyBefore": "Ho letto l'",
+        "privacyLink": "informativa sulla privacy",
+        "privacyAfter": "e acconsento al trattamento dei miei dati per la presente richiesta.",
+        "submit": "Invia richiesta non vincolante"
+      },
+      "cookies": "Cookies",
+      "privacy": "Privacy",
+      "imprint": "Credits"
+    },
+    "seasons": {
+      "herbst": { "label": "Autunno a Lagundo", "title": "Giornate dorate, panorami limpidi e tanto gusto.", "text": "Quando i vigneti si tingono d'oro e l'aria diventa limpida, Lagundo mostra il suo lato più piacevole: ideale per passeggiate, sapori altoatesini e ore di relax nella spa.", "image": "herbst-kirche-reben.jpg" },
+      "sommer": { "label": "Estate a Lagundo", "title": "Tra palme, malghe e momenti in piscina.", "text": "Al mattino in montagna, al pomeriggio in piscina e la sera con vista sulla conca di Merano.", "image": "paket-sommer.jpg" },
+      "fruehling": { "label": "Primavera a Lagundo", "title": "Meli in fiore e i primi raggi caldi.", "text": "Mentre sulle cime c'è ancora neve, la valle si riempie di fiori: il momento ideale per camminare e ritrovare energia.", "image": "apfelbluete.jpg" }
+    },
+    "information": {
+      "hotel": {
+        "eyebrow": "Informazioni utili",
+        "title": "Le informazioni più importanti per la vostra vacanza",
+        "sections": [
+          { "title": "Posizione e arrivo", "blocks": [
+            { "heading": "Come raggiungere il Heinrichshof" },
+            { "label": "Da nord", "text": "Percorrete l'autostrada del Brennero A22 fino a Bolzano Sud e proseguite sulla MEBO fino all'uscita Lagundo. Da lì mancano circa cinque minuti al Heinrichshof, via Rosengarten 14." },
+            { "label": "Dal Passo Resia", "text": "Attraversate la Val Venosta in direzione Merano fino a Lagundo." }
+          ] },
+          { "title": "Colazione e ristorante", "blocks": [
+            { "text": "La giornata inizia con il buffet della colazione dalle 7:30 alle 10:30, nella luminosa sala o sulla terrazza panoramica." },
+            { "text": "La sera la nostra cucina unisce leggerezza mediterranea e sapori altoatesini. La cena è disponibile per gli ospiti in mezza pensione." }
+          ] },
+          { "title": "Servizi inclusi", "blocks": [
+            { "items": ["Piscina coperta e scoperta e idromassaggio", "Nuovo mondo delle saune alpine", "Borsa wellness con accappatoio, ciabatte e teli", "Programma settimanale di attività", "Wi-Fi e parcheggio", "AlgundCard con trasporto pubblico gratuito"] }
+          ] },
+          { "title": "Da sapere", "blocks": [
+            { "items": [
+              { "label": "Check-in", "text": "dalle ore 15:00" },
+              { "label": "Check-out", "text": "entro le ore 11:00" },
+              { "label": "Imposta di soggiorno", "text": "€ 3,10 a persona/notte; bambini sotto i 14 anni esenti" },
+              { "label": "Caparra", "text": "30% dell'importo totale, rimborsabile entro il periodo di cancellazione gratuita" }
+            ] },
+            { "heading": "Condizioni di cancellazione" },
+            { "items": ["Fino a 3 settimane prima dell'arrivo: gratuita", "Da 20 a 7 giorni prima: 50%", "Meno di 7 giorni, no-show o partenza anticipata: 100%"] }
+          ] },
+          { "title": "AlgundCard", "blocks": [
+            { "text": "Con l'AlgundCard gratuita utilizzate i mezzi pubblici, alcune funivie e numerosi musei in tutto l'Alto Adige." }
+          ] }
+        ]
+      }
+    },
+    "rooms": {
+      "hotel": {
+        "eyebrow": "Abitare al Heinrichshof",
+        "title": "Camere e suite dedicate alla tranquillità",
+        "intro": "Dalla confortevole camera doppia alla spaziosa suite nella Residence: scegliete il rifugio adatto a voi.",
+        "items": [
+          { "image": "room-nord.jpg", "title": "Camera doppia con balcone nord", "meta": "20–23 m² · 2 persone", "price": "da € 145 a persona con colazione" },
+          { "image": "room-sued.jpg", "title": "Camera doppia con balcone sud", "meta": "20 m² · 2 persone", "price": "da € 155 a persona con colazione" },
+          { "image": "suite-stammhaus.jpg", "title": "Suite nella casa principale", "meta": "32–40 m² · 2–4 persone", "price": "da € 195 a persona con colazione" },
+          { "image": "suite-residence.jpg", "title": "Suite nella Residence", "meta": "55 m² · 2–6 persone", "price": "da € 210 a persona con colazione" }
+        ]
+      }
+    },
+    "galleries": {
+      "hotel": {
+        "eyebrow": "Impressioni",
+        "title": "Scoprite il Heinrichshof",
+        "items": [
+          { "image": "liegewiese-2.jpg", "alt": "Il Heinrichshof e il suo giardino a Lagundo" },
+          { "image": "liegewiese-1.jpg", "alt": "Prato relax del Heinrichshof" },
+          { "image": "hero.jpg", "alt": "Vista panoramica sulla conca di Merano" },
+          { "image": "room-sued.jpg", "alt": "Camera doppia con balcone sud" },
+          { "image": "haus-1.jpg", "alt": "Soggiorno di una suite" },
+          { "image": "terrasse.jpg", "alt": "Terrazza panoramica" },
+          { "image": "pool.jpg", "alt": "Piscina coperta e wellness" },
+          { "image": "garten.jpg", "alt": "Giardino del Heinrichshof" },
+          { "image": "naturesauna.jpg", "alt": "Sauna naturale" },
+          { "image": "spa-sauna-panorama.jpg", "alt": "Mondo delle saune alpine" },
+          { "image": "fotos-9.jpg", "alt": "Camera nella Residence" },
+          { "image": "eiswasserfall.jpg", "alt": "Fontana di ghiaccio nella spa" }
+        ]
+      }
+    },
+    "offers": {
+      "dolce-vita": { "title": "Settimane preferite – Dolce Vita al Heinrichshof", "summary": "Giornate estive attive, cucina altoatesina ed esperienze tra montagne, cultura e vino.", "price": "da € 165 a persona/notte", "details": ["Drink di benvenuto", "Buffet giornaliero di torte e strudel", "Cena di gala e buffet di antipasti", "Escursione guidata", "AltoAdige Pass incluso"] },
+      "goldener-herbst": { "title": "Autunno dorato – Sapori altoatesini", "summary": "Vigneti dorati, serate tradizionali, feste del vino e giornate limpide per camminare.", "price": "da € 149 a persona/notte", "details": ["Drink di benvenuto e buono massaggio da € 25 per camera", "Buffet giornaliero di torte e strudel", "Cena di gala ed escursione guidata", "Eventi del vino e Törggelen", "AltoAdige Pass incluso"] },
+      "winterzauber": { "title": "Magia d'inverno al Heinrichshof", "summary": "Passeggiate invernali, mercatini di Natale, baite e un Capodanno festoso.", "price": "da € 165 a persona/notte", "details": ["Passeggiata al mercatino di Natale di Merano", "Cenone di gala di San Silvestro", "Passeggiata culinaria nel paese", "Escursione invernale con sosta in malga"] }
+    }
+  },
+  "nl": {
+    "dateLocale": "nl-NL",
+    "descriptor": "Hotel & Residence · Algund",
+    "links": {
+      "privacy": "https://www.heinrichshof.com/en/information/privacy/3-0.html",
+      "cookies": "https://www.heinrichshof.com/en/information/privacy/3-0.html",
+      "imprint": "https://www.heinrichshof.com/en/information/credits/2-0.html"
+    },
+    "ui": {
+      "request": "Offerte aanvragen",
+      "requestNonBinding": "Vrijblijvend aanvragen",
+      "book": "Direct boeken",
+      "discoverOffers": "Aanbiedingen bekijken",
+      "personalOffer": "Persoonlijke offerte ontvangen",
+      "highlightsEyebrow": "Wat u kunt verwachten",
+      "highlightsTitle": "Drie redenen om wat langer te blijven.",
+      "seasonOffers": "Passende aanbiedingen",
+      "offersEyebrow": "Nu boekbaar",
+      "offersTitle": "Tijd om vooruit te kijken.",
+      "offersLead": "Geselecteerde arrangementen voor uw verblijf in Der Heinrichshof.",
+      "offerDetails": "Inclusieve diensten en programma",
+      "offerRequest": "Aanvragen",
+      "noOffers": "Momenteel staan er geen vaste arrangementen online. Wij maken graag een persoonlijke offerte.",
+      "from": "vanaf",
+      "nights": "nachten",
+      "roomPrevious": "Vorige kamer",
+      "roomNext": "Volgende kamer",
+      "roomDetails": "Details",
+      "galleryPrevious": "Vorige foto",
+      "galleryNext": "Volgende foto",
+      "gallerySwipe": "Veeg opzij voor meer foto's",
+      "storyCta": "Vakantie aanvragen",
+      "requestEyebrow": "Vrijblijvende aanvraag",
+      "requestTitle": "Uw vakantie begint met een paar gegevens.",
+      "requestLead": "Vertel ons wanneer en hoe u wilt reizen. Wij sturen u een persoonlijk samengestelde offerte.",
+      "bookingEyebrow": "Direct boeken",
+      "bookingTitle": "Boek direct en bespaar.",
+      "bookingLoading": "Online boeken wordt geladen …",
+      "trustOneTitle": "4-sterren superior",
+      "trustOneText": "Persoonlijk geleid",
+      "trustTwoTitle": "9,2 / 10",
+      "trustTwoText": "Booking.com",
+      "trustThreeTitle": "AlgundCard inbegrepen",
+      "trustThreeText": "Reizen door heel Zuid-Tirol",
+      "form": {
+        "arrival": "Aankomst",
+        "departure": "Vertrek",
+        "firstName": "Voornaam",
+        "lastName": "Achternaam",
+        "email": "E-mail",
+        "phone": "Telefoon",
+        "adults": "Volwassenen",
+        "children": "Kinderen",
+        "board": "Verzorging",
+        "boardPlaceholder": "Maak een keuze",
+        "breakfast": "Kamer met ontbijt",
+        "halfBoard": "Halfpension",
+        "noBoard": "Alleen overnachting",
+        "room": "Voorkeurskamer",
+        "roomOpen": "Nog niet gekozen",
+        "doubleRoom": "Tweepersoonskamer",
+        "suite": "Suite",
+        "apartment": "Appartement",
+        "message": "Wensen of vragen",
+        "privacyBefore": "Ik heb het",
+        "privacyLink": "privacybeleid",
+        "privacyAfter": "gelezen en ga akkoord met de verwerking van mijn gegevens voor deze aanvraag.",
+        "submit": "Vrijblijvende aanvraag versturen"
+      },
+      "cookies": "Cookies",
+      "privacy": "Privacybeleid",
+      "imprint": "Credits"
+    },
+    "seasons": {
+      "herbst": { "label": "Herfst in Algund", "title": "Gouden dagen, helder uitzicht en puur genieten.", "text": "Wanneer de wijngaarden goud kleuren en de lucht helder wordt, laat Algund zich van zijn mooiste kant zien – ideaal voor wandelingen, Zuid-Tiroolse smaken en ontspanning in de warme wellness.", "image": "herbst-kirche-reben.jpg" },
+      "sommer": { "label": "Zomer in Algund", "title": "Tussen palmen, almen en het zwembad.", "text": "Vroeg de bergen in, 's middags aan het zwembad en 's avonds genieten van het uitzicht over Merano.", "image": "paket-sommer.jpg" },
+      "fruehling": { "label": "Lente in Algund", "title": "Appelbloesem en de eerste warme zon.", "text": "Terwijl op de toppen nog sneeuw ligt, staat het dal in bloei – een rustige tijd voor wandelen, genieten en nieuwe energie.", "image": "apfelbluete.jpg" }
+    },
+    "information": {
+      "hotel": {
+        "eyebrow": "Goed om te weten",
+        "title": "De belangrijkste informatie voor uw verblijf",
+        "sections": [
+          { "title": "Ligging en aankomst", "blocks": [
+            { "heading": "Zo bereikt u Der Heinrichshof" },
+            { "label": "Vanuit Duitsland of Oostenrijk", "text": "Rijd via Innsbruck en de Brennerpas naar Bolzano Sud. Neem vervolgens de MEBO tot afrit Algund. Vanaf daar is het ongeveer vijf minuten naar Der Heinrichshof, Rosengartenstraße 14." },
+            { "label": "Vanuit Zwitserland", "text": "Rijd via de Reschenpas of Ofenpas door het Vinschgau naar Algund." }
+          ] },
+          { "title": "Ontbijt en restaurant", "blocks": [
+            { "text": "Begin de dag met ons vitaliteitsontbijt van 7.30 tot 10.30 uur, in de lichte eetzaal of op het panoramaterras." },
+            { "text": "'s Avonds combineert onze keuken mediterrane lichtheid met authentieke Zuid-Tiroolse smaken. Diner is beschikbaar voor gasten met halfpension." }
+          ] },
+          { "title": "Inbegrepen diensten", "blocks": [
+            { "items": ["Binnen- en buitenzwembad en whirlpool", "Nieuwe alpine sauna", "Wellnesstas met badjas, slippers en handdoeken", "Wekelijks activiteitenprogramma", "Wifi en parkeerplaats", "AlgundCard met gratis openbaar vervoer"] }
+          ] },
+          { "title": "Goed om te weten", "blocks": [
+            { "items": [
+              { "label": "Check-in", "text": "vanaf 15.00 uur" },
+              { "label": "Check-out", "text": "tot 11.00 uur" },
+              { "label": "Toeristenbelasting", "text": "€ 3,10 per persoon/nacht; kinderen onder 14 jaar zijn vrijgesteld" },
+              { "label": "Aanbetaling", "text": "30% van het totaalbedrag, restitueerbaar binnen de gratis annuleringsperiode" }
+            ] },
+            { "heading": "Annuleringsvoorwaarden" },
+            { "items": ["Tot 3 weken voor aankomst: gratis", "20 tot 7 dagen voor aankomst: 50%", "Minder dan 7 dagen, no-show of vroeg vertrek: 100%"] }
+          ] },
+          { "title": "AlgundCard", "blocks": [
+            { "text": "Met de gratis AlgundCard gebruikt u het openbaar vervoer, geselecteerde kabelbanen en talrijke musea in heel Zuid-Tirol." }
+          ] }
+        ]
+      }
+    },
+    "rooms": {
+      "hotel": {
+        "eyebrow": "Verblijven in Der Heinrichshof",
+        "title": "Kamers en suites voor rust en ruimte",
+        "intro": "Van een gezellige tweepersoonskamer tot een ruime Residence-suite – kies de plek die bij uw reis past.",
+        "items": [
+          { "image": "room-nord.jpg", "title": "Tweepersoonskamer met noordbalkon", "meta": "20–23 m² · 2 personen", "price": "vanaf € 145 p.p. incl. ontbijt" },
+          { "image": "room-sued.jpg", "title": "Tweepersoonskamer met zuidbalkon", "meta": "20 m² · 2 personen", "price": "vanaf € 155 p.p. incl. ontbijt" },
+          { "image": "suite-stammhaus.jpg", "title": "Suite in het hoofdgebouw", "meta": "32–40 m² · 2–4 personen", "price": "vanaf € 195 p.p. incl. ontbijt" },
+          { "image": "suite-residence.jpg", "title": "Suite in de Residence", "meta": "55 m² · 2–6 personen", "price": "vanaf € 210 p.p. incl. ontbijt" }
+        ]
+      }
+    },
+    "galleries": {
+      "hotel": {
+        "eyebrow": "Impressies",
+        "title": "Ontdek Der Heinrichshof",
+        "items": [
+          { "image": "liegewiese-2.jpg", "alt": "Der Heinrichshof en de tuin in Algund" },
+          { "image": "liegewiese-1.jpg", "alt": "Ligweide van Der Heinrichshof" },
+          { "image": "hero.jpg", "alt": "Panorama over de regio Merano" },
+          { "image": "room-sued.jpg", "alt": "Tweepersoonskamer met zuidbalkon" },
+          { "image": "haus-1.jpg", "alt": "Woonruimte van een suite" },
+          { "image": "terrasse.jpg", "alt": "Panoramaterras" },
+          { "image": "pool.jpg", "alt": "Binnenzwembad en wellness" },
+          { "image": "garten.jpg", "alt": "Tuin van Der Heinrichshof" },
+          { "image": "naturesauna.jpg", "alt": "Natuursauna" },
+          { "image": "spa-sauna-panorama.jpg", "alt": "Alpine sauna" },
+          { "image": "fotos-9.jpg", "alt": "Kamer in de Residence" },
+          { "image": "eiswasserfall.jpg", "alt": "IJsfontein in de spa" }
+        ]
+      }
+    },
+    "offers": {
+      "dolce-vita": { "title": "Lievelingsweken – Dolce Vita in Der Heinrichshof", "summary": "Actieve zomerdagen, Zuid-Tiroolse gerechten en belevenissen tussen bergen, cultuur en wijn.", "price": "vanaf € 165 p.p./nacht", "details": ["Welkomstdrankje", "Dagelijks taart- en strudelbuffet", "Galadiner en voorgerechtenbuffet", "Begeleide wandeling", "Zuid-Tirol Pass inbegrepen"] },
+      "goldener-herbst": { "title": "Gouden herfst – Zuid-Tirools genieten", "summary": "Gouden wijngaarden, traditionele herfstavonden, wijnfeesten en heldere wandeldagen.", "price": "vanaf € 149 p.p./nacht", "details": ["Welkomstdrankje en massagebon van € 25 per kamer", "Dagelijks taart- en strudelbuffet", "Galadiner en begeleide wandeling", "Wijnwandeling en Törggelen", "Zuid-Tirol Pass inbegrepen"] },
+      "winterzauber": { "title": "Wintermagie in Der Heinrichshof", "summary": "Winterwandelingen, kerstmarkten, berghutten en een feestelijke jaarwisseling.", "price": "vanaf € 165 p.p./nacht", "details": ["Wandeling naar de kerstmarkt van Merano", "Feestelijk oudejaarsgaladiner", "Culinaire dorpswandeling", "Winterwandeling met berghut"] }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "herbst": {
+    "label": "Herbst in Algund",
+    "title": "Goldene Tage. Klare Sicht. Ganz viel Genuss.",
+    "text": "Wenn sich die Weinberge färben und die Luft wieder klarer wird, zeigt sich Algund von seiner genussvollsten Seite. Ideal für Waalwege, Törggelen und ruhige Stunden in der warmen Wellnesswelt.",
+    "image": "herbst-kirche-reben.jpg"
+  },
+  "sommer": {
+    "label": "Sommer in Algund",
+    "title": "Zwischen Palmen, Almen und Poolmomenten.",
+    "text": "Früh auf den Berg, nachmittags an den Pool und abends mit Blick über das Meraner Land genießen – der Südtiroler Sommer lässt jeden Tag offen.",
+    "image": "paket-sommer.jpg"
+  },
+  "fruehling": {
+    "label": "Frühling in Algund",
+    "title": "Apfelblüte und erste warme Sonnenstunden.",
+    "text": "Während auf den Gipfeln noch Schnee liegt, öffnen sich im Tal die ersten Blüten. Eine besonders ruhige Zeit für Spaziergänge, Genuss und neue Energie.",
+    "image": "apfelbluete.jpg"
+  }
+}

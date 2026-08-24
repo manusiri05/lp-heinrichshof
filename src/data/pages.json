@@ -1,0 +1,365 @@
+[
+  {
+    "route": "/de/",
+    "key": "general",
+    "lang": "de",
+    "title": "Urlaub in Algund bei Meran | Der Heinrichshof",
+    "description": "Auszeit in Algund bei Meran: stilvoll wohnen, fein genießen und in der neuen Wellnesswelt entspannen.",
+    "hero": {
+      "image": "hero.jpg",
+      "eyebrow": "Hotel & Residence Der Heinrichshof",
+      "title": "Südtirol, das sich leicht anfühlt.",
+      "subtitle": "Genuss, Wellness und stille Lieblingsplätze über den Dächern von Meran."
+    },
+    "seasonal": {
+      "herbst": {
+        "heroImage": "herbst-panorama.jpg",
+        "heroEyebrow": "Goldener Herbst in Algund bei Meran",
+        "heroTitle": "Goldene Tage über Meran.",
+        "heroSubtitle": "Klare Bergsicht, leuchtende Weinberge und wohltuende Wärme in der neuen Wellnesswelt."
+      }
+    },
+    "intro": {
+      "eyebrow": "Ankommen in Algund",
+      "title": "Ein Rückzugsort zwischen Weinbergen und Bergen",
+      "text": [
+        "Im Heinrichshof beginnt Urlaub nicht mit einem Programm, sondern mit einem Gefühl: morgens Sonne auf dem Balkon, tagsüber freie Wege durch Apfelgärten und Weinberge, abends feine Südtiroler Küche.",
+        "Die ruhige Lage oberhalb von Meran verbindet mediterrane Leichtigkeit mit alpiner Klarheit – persönlich geführt, angenehm unkompliziert und mit viel Raum für die eigenen Urlaubsmomente."
+      ],
+      "image": "herbst-waalweg.jpg"
+    },
+    "highlights": [
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Wellness", "title": "Wärme, Wasser und ganz viel Ruhe", "text": "Innen- und Außenpool, neue Saunalandschaft, Whirlpool und stille Rückzugsorte für entspannte Herbststunden." },
+      { "image": "herbst-kulinarik.jpg", "eyebrow": "Genuss", "title": "Südtirol auf dem Teller", "text": "Herbstliche Aromen, regionale Produkte und eine alpin-mediterrane Abendküche mit persönlicher Handschrift." },
+      { "image": "herbst-ruecksack.jpg", "eyebrow": "Aktiv", "title": "Direkt hinein ins Meraner Land", "text": "Waalwege, Weinberge und aussichtsreiche Herbsttouren beginnen fast vor der Haustür – die AlgundCard fährt mit." }
+    ],
+    "story": {
+      "eyebrow": "Das gute Gefühl inklusive",
+      "title": "Persönlich geführt. Wohltuend unaufgeregt.",
+      "text": [
+        "Der Heinrichshof ist groß genug für Freiraum und klein genug für echte Aufmerksamkeit. Sie wohnen in hellen Zimmern, großzügigen Suiten oder privaten Appartements und genießen dabei genau die Leistungen, die zu Ihrer Art des Reisens passen.",
+        "Ob romantische Auszeit, aktive Urlaubswoche oder ein paar ruhige Tage zwischendurch: Wir verbinden das Beste aus Hotel und Residence mit einem Ort, an den man gerne zurückkehrt."
+      ]
+    }
+  },
+  {
+    "route": "/de/algund/",
+    "key": "algund",
+    "lang": "de",
+    "title": "Wellnesshotel Algund – 4 Sterne Hotel bei Meran | Der Heinrichshof",
+    "description": "Ihr 4 Sterne Hotel in Algund bei Meran: Wellness, Verwöhnpension, Waalwege und AlgundCard inklusive. Jetzt unverbindlich anfragen.",
+    "hero": {
+      "image": "hero.jpg",
+      "eyebrow": "4 Sterne Superior Hotel in Algund",
+      "title": "Ihr Hotel in Algund für leichte Urlaubstage.",
+      "subtitle": "Ruhig gelegen, persönlich geführt und nur wenige Minuten von Meran entfernt."
+    },
+    "seasonal": {
+      "fruehling": { "heroImage": "apfelbluete.jpg", "heroEyebrow": "Frühling im 4 Sterne Hotel Algund" },
+      "sommer": { "heroImage": "garten.jpg", "heroEyebrow": "Sommer im Wellnesshotel Algund" },
+      "herbst": { "heroImage": "herbst-kirche-reben.jpg", "heroEyebrow": "Herbst im 4 Sterne Hotel Algund", "heroTitle": "Herbsturlaub in Algund, wie er sein soll.", "heroSubtitle": "Goldene Weinberge, klare Wege und entspannte Wellnessmomente nur wenige Minuten von Meran." }
+    },
+    "intro": {
+      "eyebrow": "Hotel Algund · Meraner Land",
+      "title": "Zwischen Waalweg, Weinbergen und der Kurstadt Meran",
+      "text": [
+        "Wer ein Hotel in Algund sucht, möchte Südtirol meist von seiner sonnigen und unkomplizierten Seite erleben. Genau hier liegt der Heinrichshof: oberhalb des Dorfes, mit freiem Blick ins Meraner Land und kurzen Wegen zu Waalwegen, Seilbahnen und Meran.",
+        "Als persönlich geführtes 4 Sterne Superior Hotel in Algund verbinden wir ruhiges Wohnen, neue Wellnessbereiche und feine Verwöhnpension. Die AlgundCard ist inklusive und macht Ausflüge im ganzen Land besonders einfach."
+      ],
+      "image": "herbst-panorama.jpg"
+    },
+    "highlights": [
+      { "image": "herbst-kirche-reben.jpg", "eyebrow": "Lage", "title": "Algund beginnt vor der Tür", "text": "Waalwege, Weinberge und goldene Spazierwege starten in unmittelbarer Nähe des Hotels." },
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Wellnesshotel Algund", "title": "Entspannung mit Aussicht", "text": "Warme Pools, neue Saunen und ruhige Rückzugsorte sind der perfekte Abschluss eines klaren Herbsttages." },
+      { "image": "herbst-ruecksack.jpg", "eyebrow": "Meran ganz nah", "title": "Stadt und Natur verbinden", "text": "In wenigen Minuten sind Sie in Meran – und ebenso schnell wieder auf den stilleren Wegen oberhalb von Algund." }
+    ],
+    "story": {
+      "eyebrow": "Warum Der Heinrichshof",
+      "title": "Ein Wellnesshotel in Algund ohne große Inszenierung",
+      "text": [
+        "Hier müssen Sie sich nicht zwischen Aktivurlaub und Erholung entscheiden. Starten Sie morgens auf den Algunder Waalweg, genießen Sie mittags die Sonne im Garten und lassen Sie den Tag im warmen Wasser oder beim Abendmenü ausklingen.",
+        "Die Kombination aus Hotel, Residence und persönlicher Gastgeberkultur macht den Heinrichshof zu einem angenehm flexiblen Ausgangspunkt für Urlaub in Algund und rund um Meran."
+      ]
+    }
+  },
+  {
+    "route": "/de/ferienwohnung/",
+    "key": "ferienwohnung",
+    "lang": "de",
+    "title": "Ferienwohnung Algund – Appartement bei Meran | Der Heinrichshof",
+    "description": "Großzügige Ferienwohnung in Algund mit Hotelkomfort, Loggia, Wellness und Blick über das Meraner Land.",
+    "hero": {
+      "image": "fw-hero.jpg",
+      "eyebrow": "Residence Der Heinrichshof · Algund",
+      "title": "Ferienwohnung in Algund. Freiheit mit Hotelgefühl.",
+      "subtitle": "Großzügig wohnen, die Tage selbst gestalten und Wellness auf Wunsch einfach dazunehmen."
+    },
+    "seasonal": {
+      "fruehling": { "heroImage": "apartment-1.jpg", "heroEyebrow": "Frühlingsferien in der Residence" },
+      "sommer": { "heroImage": "fw-hero.jpg", "heroEyebrow": "Sommer in der Ferienwohnung Algund" },
+      "herbst": { "heroImage": "apartment-kueche.jpg", "heroEyebrow": "Herbst in der Ferienwohnung Algund", "heroTitle": "Herbstfreiheit in der Ferienwohnung Algund.", "heroSubtitle": "Viel eigener Raum, goldene Wege vor der Tür und Wellness direkt nebenan." }
+    },
+    "intro": {
+      "eyebrow": "Appartement in der Residence",
+      "title": "Mehr Raum für die eigene Art zu reisen",
+      "text": [
+        "Unsere Ferienwohnungen in Algund sind für alle gedacht, die Privatsphäre und Großzügigkeit schätzen, aber auf die angenehmen Möglichkeiten eines Hotels nicht verzichten möchten.",
+        "Die Appartements bieten einen hellen Wohnbereich, separate Schlafräume, eine ausgestattete Kochnische und eine private Loggia mit Blick Richtung Meran. Wellness, Frühstück und Abendessen können je nach Wunsch ergänzt werden."
+      ],
+      "image": "apartment-3.jpg"
+    },
+    "highlights": [
+      { "image": "apartment-4.jpg", "eyebrow": "55 m² Freiraum", "title": "Wohnen statt nur übernachten", "text": "Separate Räume, Kochnische und Loggia geben Paaren und Familien angenehm viel Platz." },
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Wellness inklusive", "title": "Hotelkomfort direkt nebenan", "text": "Pools und die neue Wellnesswelt stehen auch unseren Residence-Gästen für entspannte Herbststunden offen." },
+      { "image": "herbst-wein.jpg", "eyebrow": "Ganz flexibel", "title": "Selbst versorgen oder genießen lassen", "text": "Frühstück und Abendessen können nach Verfügbarkeit bequem ergänzt werden – Herbstgenuss inklusive." }
+    ],
+    "story": {
+      "eyebrow": "Ferienwohnung bei Meran",
+      "title": "Ein Urlaub, der sich Ihrem Rhythmus anpasst",
+      "text": [
+        "Frühstück auf der eigenen Loggia, ein spontaner Ausflug nach Meran oder ein langer Nachmittag am Pool: In der Residence bestimmen Sie selbst, wie viel Struktur Ihr Urlaub braucht.",
+        "Tägliche Reinigung, Parkplatz, WLAN und die AlgundCard erleichtern den Aufenthalt. So bleibt mehr Zeit für das, worauf Sie sich wirklich freuen."
+      ]
+    }
+  },
+  {
+    "route": "/de/urlaub-mit-hund/",
+    "key": "urlaub-mit-hund",
+    "lang": "de",
+    "title": "Urlaub mit Hund in Südtirol | Hotel Der Heinrichshof Algund",
+    "description": "Urlaub mit Hund in Südtirol: ruhige Lage in Algund, Spazierwege ab Hotel, hundefreundliche Zimmer und Wellness für die Menschen.",
+    "hero": {
+      "image": "garten.jpg",
+      "eyebrow": "Hundefreundlicher Urlaub in Algund",
+      "title": "Südtirol gemeinsam auf vier Pfoten entdecken.",
+      "subtitle": "Ruhige Wege, viel Natur und ein entspannter Rückzugsort für Mensch und Hund."
+    },
+    "seasonal": {
+      "fruehling": { "heroImage": "apfelbluete.jpg", "heroEyebrow": "Frühlingsurlaub mit Hund" },
+      "sommer": { "heroImage": "garten.jpg", "heroEyebrow": "Sommerurlaub mit Hund in Algund" },
+      "herbst": { "heroImage": "herbst-waalweg.jpg", "heroEyebrow": "Herbsturlaub mit Hund in Südtirol", "heroTitle": "Goldene Wege auf vier Pfoten.", "heroSubtitle": "Angenehme Temperaturen, ruhige Waalwege und ein entspannter Rückzugsort für Mensch und Hund." }
+    },
+    "intro": {
+      "eyebrow": "Hundeurlaub bei Meran",
+      "title": "Direkt vom Hotel hinaus ins Grüne",
+      "text": [
+        "Für einen gelungenen Urlaub mit Hund braucht es keine große Animation, sondern Platz, Ruhe und Wege, die ohne lange Autofahrt erreichbar sind. Der Heinrichshof liegt oberhalb von Algund – umgeben von Weinbergen, Obstgärten und Spaziermöglichkeiten.",
+        "Hunde sind in ausgewählten Zimmern, Suiten und Appartements auf Anfrage willkommen. Während Ihr Vierbeiner nach dem Ausflug entspannt, warten auf Sie Garten, Pools und die neue Wellnesswelt."
+      ],
+      "image": "herbst-ruecksack.jpg"
+    },
+    "highlights": [
+      { "image": "herbst-waalweg.jpg", "eyebrow": "Wege ab Haus", "title": "Losgehen statt erst losfahren", "text": "Goldene Spazierwege und ruhige Waalwege beginnen rund um Algund fast direkt vor dem Hotel." },
+      { "image": "zimmer-1.jpg", "eyebrow": "Ausgewählte Kategorien", "title": "Genug Platz zum Ankommen", "text": "Geeignete Zimmer, Suiten und Appartements sind mit Hund auf vorherige Anfrage buchbar." },
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Für die Menschen", "title": "Wellness nach der gemeinsamen Tour", "text": "Pools, Saunen und Ruheräume sorgen nach aktiven Herbststunden für wohltuende Erholung." }
+    ],
+    "story": {
+      "eyebrow": "Gut zu wissen",
+      "title": "Ehrlich hundefreundlich – mit klaren Regeln",
+      "text": [
+        "Damit sich alle Gäste wohlfühlen, stimmen wir die passende Zimmerkategorie vor der Anreise persönlich mit Ihnen ab. Bitte nennen Sie uns Größe und Rasse bereits bei der Anfrage.",
+        "In Restaurant und Wellnessbereich sind Hunde nicht vorgesehen. Rund um Algund finden sich dafür zahlreiche gemeinsame Lieblingsplätze in der Natur."
+      ]
+    }
+  },
+  {
+    "route": "/de/fruehling/",
+    "key": "fruehling",
+    "offerAudience": "general",
+    "fixedSeason": "fruehling",
+    "lang": "de",
+    "title": "Frühlingsurlaub in Algund bei Meran | Der Heinrichshof",
+    "description": "Apfelblüte, Waalwege und erste warme Sonnentage: Frühlingsurlaub im 4 Sterne Superior Hotel in Algund.",
+    "hero": { "image": "apfelbluete.jpg", "eyebrow": "Frühling im Meraner Land", "title": "Wenn Südtirol wieder aufblüht.", "subtitle": "Milde Wege im Tal, Schnee auf den Gipfeln und viel Ruhe für neue Energie." },
+    "intro": { "eyebrow": "Frühlingsurlaub in Algund", "title": "Die leise, besonders schöne Zeit im Meraner Land", "text": ["Während in den Bergen noch Schnee liegt, werden die Tage rund um Algund bereits mild. Apfelgärten blühen, Waalwege laden zu ersten Wanderungen ein und Merans Terrassen öffnen sich zur Sonne.", "Im Heinrichshof verbinden Sie diese besondere Jahreszeit mit warmer Wellness, feiner Küche und einem ruhigen Platz oberhalb des Tals."], "image": "terrasse.jpg" },
+    "highlights": [
+      { "image": "apfelbluete.jpg", "eyebrow": "Apfelblüte", "title": "Ein Tal in Weiß und Rosa", "text": "Spaziergänge und Radtouren führen mitten durch die blühenden Obstgärten." },
+      { "image": "pool.jpg", "eyebrow": "Warme Wellness", "title": "Genau richtig nach der Frühlingsrunde", "text": "Pools und Saunen machen auch wechselhafte Frühlingstage angenehm." },
+      { "image": "genuss.jpg", "eyebrow": "Leichte Küche", "title": "Frische Aromen der neuen Saison", "text": "Südtiroler Produkte treffen auf mediterrane Leichtigkeit." }
+    ],
+    "story": { "eyebrow": "Frühling im Heinrichshof", "title": "Aktiv sein, ohne sich beeilen zu müssen", "text": ["Im Frühling gehört das Meraner Land wieder den Genießern. Die Temperaturen sind angenehm, beliebte Wege noch ruhig und die Aussicht besonders klar.", "Mit der AlgundCard erreichen Sie Meran und viele Ausflugsziele bequem ohne Auto."] }
+  },
+  {
+    "route": "/de/sommer/",
+    "key": "sommer",
+    "offerAudience": "general",
+    "fixedSeason": "sommer",
+    "lang": "de",
+    "title": "Sommerurlaub in Algund bei Meran | Der Heinrichshof",
+    "description": "Sommerurlaub in Algund zwischen Palmen und Almen: Wandern, Biken, Pools und Südtiroler Genuss.",
+    "hero": { "image": "garten.jpg", "eyebrow": "Sommer in Algund", "title": "Früh auf den Berg. Später an den Pool.", "subtitle": "Zwischen Palmen und Almen hat jeder Sommertag seine eigene Richtung." },
+    "intro": { "eyebrow": "Sommerurlaub bei Meran", "title": "Mediterrane Tage und kühle Höhen", "text": ["Morgens locken Bergwege und Panoramatouren, mittags schattige Plätze im Garten und am Nachmittag das Wasser. Durch die Höhenunterschiede rund um Algund lässt sich der Sommer ganz nach Temperatur und Stimmung gestalten.", "Abends wird es auf der Terrasse ruhig – mit Blick über das Tal und einer Küche, die Südtirol leicht und sommerlich interpretiert."], "image": "liegewiese-3.jpg" },
+    "highlights": [
+      { "image": "garten.jpg", "eyebrow": "Garten & Pool", "title": "Ihr Platz für warme Nachmittage", "text": "Liegewiese, Wasser und schattige Ruheplätze liegen direkt am Haus." },
+      { "image": "terrasse.jpg", "eyebrow": "Panorama", "title": "Lange Abende über Meran", "text": "Die Aussicht begleitet Frühstück, Aperitif und stille Sommermomente." },
+      { "image": "liegewiese-1.jpg", "eyebrow": "Berg & Bike", "title": "Jeden Tag eine andere Höhe", "text": "Von der Talrunde bis zur Bergtour ist rund um Algund vieles möglich." }
+    ],
+    "story": { "eyebrow": "Sommer im Heinrichshof", "title": "Aktivurlaub mit eingebauter Erholung", "text": ["Die besten Sommertage verbinden Bewegung und Entspannung. Dafür liegen Garten, Wellness und Tourenmöglichkeiten im Heinrichshof besonders nah beieinander.", "Die AlgundCard erleichtert viele Wege und macht spontane Ausflüge ohne Auto möglich."] }
+  },
+  {
+    "route": "/de/herbst/",
+    "key": "herbst",
+    "offerAudience": "general",
+    "fixedSeason": "herbst",
+    "lang": "de",
+    "title": "Herbsturlaub in Algund bei Meran | Der Heinrichshof",
+    "description": "Goldener Herbst in Algund: Waalwege, klare Bergsicht, Törggele-Genuss und Wellness im Heinrichshof.",
+    "hero": { "image": "herbst-panorama.jpg", "eyebrow": "Goldener Herbst in Algund", "title": "Klare Sicht und warme Genussmomente.", "subtitle": "Wenn Weinberge leuchten, Wanderwege ruhiger werden und Südtirol besonders gut schmeckt." },
+    "intro": { "eyebrow": "Herbsturlaub bei Meran", "title": "Eine Jahreszeit für Genießer und Weitblicker", "text": ["Der Herbst bringt klare Luft, angenehme Wandertemperaturen und warme Farben ins Meraner Land. Tagsüber führen Wege durch Weinberge und Kastanienhaine, abends wartet die wohltuende Wärme der Wellnesswelt.", "Törggelezeit, regionale Produkte und die Weinlese geben dieser Jahreszeit ihren unverwechselbaren Geschmack."], "image": "herbst-waalweg.jpg" },
+    "highlights": [
+      { "image": "herbst-ruecksack.jpg", "eyebrow": "Wandern", "title": "Beste Sicht auf stilleren Wegen", "text": "Angenehme Temperaturen und klare Tage machen den Herbst ideal für Touren." },
+      { "image": "herbst-kastanien.jpg", "eyebrow": "Törggelezeit", "title": "Südtirol schmeckt jetzt besonders intensiv", "text": "Neue Weine, Kastanien und regionale Herbstküche prägen die Wochen." },
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Wellness", "title": "Wärme nach der Herbstluft", "text": "Saunen, Pools und Ruheräume bilden den entspannten Abschluss." }
+    ],
+    "winter": {
+      "eyebrow": "Weihnachtszeit · 26.12.2026 bis 06.01.2027",
+      "title": "Weihnachtsmärkte, Winterwege und ein genussvoller Jahreswechsel.",
+      "image": "https://www.heinrichshof.com/_assets/810d8e76222cdb789f335d52e887aa4d/images/content/5048_desktop_0_0_2098_1400/801cX509c/fileadmin/salescontent/1/b2221be4-a943-43cc-9d38-1abe33e2b511.jpg",
+      "text": [
+        "Von der Adventszeit bis nach Neujahr wird es rund um Algund und Meran besonders stimmungsvoll. Weihnachtsmarkt, Lichter, winterliche Spaziergänge und gemütliche Einkehr verbinden sich mit der ruhigen Atmosphäre im Heinrichshof.",
+        "Zum Winterzauber gehören gemeinsame Erlebnisse, ein festlicher Silvesterabend und viel Südtiroler Genuss – persönlich begleitet und angenehm unaufgeregt."
+      ],
+      "highlights": [
+        "Spaziergang über den Tappeinerweg zum Meraner Weihnachtsmarkt",
+        "Festliches Silvester-Galamenü und gemeinsamer Jahreswechsel",
+        "Kulinarische Dorfwanderung und Winterwanderung mit Almeinkehr"
+      ]
+    },
+    "story": { "eyebrow": "Herbst im Heinrichshof", "title": "Noch einmal Sonne sammeln", "text": ["Im Tal bleiben die Tage oft lange mild, während die Bergwelt bereits ihre klare Herbststimmung zeigt. Diese Kombination macht Algund im September und Oktober besonders vielseitig.", "Vom Heinrichshof erreichen Sie Waalwege, Meran und viele Genussziele bequem und unkompliziert."] }
+  },
+  {
+    "route": "/de/voucher/",
+    "key": "voucher",
+    "offerAudience": "general",
+    "campaign": "50-euro-kennenlern-gutschein",
+    "lang": "de",
+    "title": "50 € Kennenlern-Gutschein | Hotel Der Heinrichshof Algund",
+    "description": "Sichern Sie sich 50 € Kennenlern-Gutschein für Ihren ersten Aufenthalt im 4 Sterne Superior Hotel Der Heinrichshof in Algund bei Meran.",
+    "voucher": {
+      "amount": "50 €",
+      "text": "Fragen Sie Ihren ersten Aufenthalt unverbindlich an und sichern Sie sich Ihr persönliches Kennenlern-Geschenk für den Heinrichshof.",
+      "formText": "Senden Sie uns Ihre Reisedaten. Wir erstellen Ihr persönliches Urlaubsangebot und berücksichtigen dabei Ihren 50-€-Kennenlern-Gutschein."
+    },
+    "hero": {
+      "image": "herbst-kirche-reben.jpg",
+      "eyebrow": "Hotel & Residence Der Heinrichshof · Algund",
+      "title": "50 € für das erste Heinrichshof-Gefühl.",
+      "subtitle": "Ihr persönliches Kennenlern-Geschenk für Wellness, Genuss und goldene Urlaubstage bei Meran."
+    },
+    "seasonal": {
+      "fruehling": { "heroImage": "apfelbluete.jpg", "heroEyebrow": "50 € Kennenlern-Geschenk im Frühling", "heroTitle": "50 € für Ihre erste Frühlingsauszeit." },
+      "sommer": { "heroImage": "garten.jpg", "heroEyebrow": "50 € Kennenlern-Geschenk im Sommer", "heroTitle": "50 € für leichte Sommertage in Algund." },
+      "herbst": { "heroImage": "herbst-kirche-reben.jpg", "heroEyebrow": "50 € Kennenlern-Geschenk im Herbst", "heroTitle": "50 € für goldene Urlaubstage in Algund.", "heroSubtitle": "Jetzt den ersten Aufenthalt anfragen und Herbstgenuss, Wellness und Südtiroler Gastlichkeit entdecken." }
+    },
+    "intro": {
+      "eyebrow": "4 Sterne Superior in Algund",
+      "title": "Ein erstes Kennenlernen, das nach Wiederkommen klingt",
+      "text": [
+        "Der Heinrichshof verbindet die Freiheit des Meraner Landes mit persönlicher Gastlichkeit, feiner Küche und einer neuen Wellnesswelt. Ruhig oberhalb von Algund gelegen, sind Waalwege, Meran und viele Ausflugsziele schnell erreichbar.",
+        "Mit Ihrem 50-€-Kennenlern-Geschenk wird die erste gemeinsame Auszeit noch ein wenig schöner. Senden Sie uns einfach Ihre Wunschdaten – wir melden uns mit einem passenden persönlichen Angebot."
+      ],
+      "image": "herbst-waalweg.jpg"
+    },
+    "highlights": [
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Neue Wellnesswelt", "title": "Wärme mit Aussicht", "text": "Pools, neue Saunen und stilvolle Ruheräume schaffen Raum zum Abschalten." },
+      { "image": "herbst-kulinarik.jpg", "eyebrow": "Genuss", "title": "Südtirol mit feiner Handschrift", "text": "Frühstück, Verwöhnpension und regionale Produkte begleiten genussvolle Urlaubstage." },
+      { "image": "herbst-ruecksack.jpg", "eyebrow": "Algund & Meran", "title": "Direkt hinein ins Meraner Land", "text": "Waalwege, Weinberge und die Kurstadt Meran liegen praktisch vor der Haustür." }
+    ],
+    "story": {
+      "eyebrow": "Ihr Kennenlern-Geschenk",
+      "title": "Persönlich anfragen. 50 € sichern. Vorfreude genießen.",
+      "text": [
+        "Der Gutschein ist für Gäste gedacht, die den Heinrichshof zum ersten Mal kennenlernen möchten. Ihre Anfrage bleibt selbstverständlich unverbindlich.",
+        "Wir prüfen Ihre Wunschdaten persönlich und senden Ihnen ein individuelles Angebot mit Zimmer, Verpflegung und allen passenden Leistungen."
+      ]
+    }
+  },
+  {
+    "route": "/en/",
+    "key": "en-general",
+    "offerAudience": "general",
+    "locale": "en",
+    "lang": "en",
+    "title": "Hotel Heinrichshof | Wellness & Nature Retreat in South Tyrol",
+    "description": "A peaceful hotel and residence in Lagundo near Merano, with panoramic views, fine food, a warm spa and the South Tyrol Guest Pass included.",
+    "hero": { "image": "hero.jpg", "eyebrow": "Hotel & Residence Der Heinrichshof", "title": "South Tyrol, made for easy days.", "subtitle": "Fine food, soothing wellness and peaceful places above Merano." },
+    "seasonal": {
+      "fruehling": { "heroImage": "apfelbluete.jpg", "heroEyebrow": "Spring in Lagundo near Merano", "heroTitle": "When South Tyrol blossoms again." },
+      "sommer": { "heroImage": "garten.jpg", "heroEyebrow": "Summer in Lagundo near Merano", "heroTitle": "Mountain mornings. Poolside afternoons." },
+      "herbst": { "heroImage": "herbst-panorama.jpg", "heroEyebrow": "Golden autumn in Lagundo near Merano", "heroTitle": "Golden days above Merano.", "heroSubtitle": "Clear mountain views, glowing vineyards and soothing warmth in our new wellness world." }
+    },
+    "intro": { "eyebrow": "Arrive in Lagundo", "title": "A peaceful retreat between vineyards and mountains", "text": ["At the Heinrichshof, a holiday begins with a feeling: sunshine on the balcony in the morning, open paths through orchards and vineyards during the day, and fine South Tyrolean cuisine in the evening.", "Our quiet position above Merano combines Mediterranean ease with Alpine clarity – personally run, pleasantly relaxed and with plenty of room for your own favourite moments."], "image": "herbst-waalweg.jpg" },
+    "highlights": [
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Wellness", "title": "Warmth, water and genuine calm", "text": "Indoor and outdoor pools, a new sauna landscape, a whirlpool and quiet retreats for deeply relaxing hours." },
+      { "image": "herbst-kulinarik.jpg", "eyebrow": "Food", "title": "South Tyrol on your plate", "text": "Regional produce and Alpine-Mediterranean evening cuisine, prepared with a light and personal touch." },
+      { "image": "herbst-ruecksack.jpg", "eyebrow": "Outdoors", "title": "Step straight into the Merano region", "text": "Irrigation-channel paths, vineyards and panoramic hikes begin close to the hotel – public transport is included." }
+    ],
+    "story": { "eyebrow": "The good feeling is included", "title": "Personally run. Refreshingly unpretentious.", "text": ["The Heinrichshof is large enough to give you space and small enough for genuine attention. Stay in bright rooms, spacious suites or private apartments and choose the services that suit the way you travel.", "Whether you are planning a romantic break, an active week or a few quiet days away, hotel comfort and residence freedom come together in one place worth returning to."] }
+  },
+  {
+    "route": "/en/uk/",
+    "key": "en-uk",
+    "offerAudience": "general",
+    "locale": "en",
+    "lang": "en-GB",
+    "title": "Hotel Heinrichshof | Scenic Hiking & Wellness Holiday in South Tyrol",
+    "description": "A scenic hiking and wellness holiday near Merano: sunny paths, warm pools, fine South Tyrolean food and easy travel with the South Tyrol Guest Pass.",
+    "hero": { "image": "hero.jpg", "eyebrow": "Hiking & wellness near Merano", "title": "Walk, unwind and breathe in South Tyrol.", "subtitle": "Panoramic trails by day, warm spa moments and fine regional food in the evening." },
+    "seasonal": {
+      "fruehling": { "heroImage": "apfelbluete.jpg", "heroEyebrow": "Spring walking holiday in South Tyrol", "heroTitle": "Blossom in the valley. Snow on the peaks." },
+      "sommer": { "heroImage": "garten.jpg", "heroEyebrow": "Summer in the Merano region", "heroTitle": "Walk high. Unwind by the pool." },
+      "herbst": { "heroImage": "herbst-waalweg.jpg", "heroEyebrow": "Autumn walking holiday near Merano", "heroTitle": "Clear trails. Golden vineyards. Warm spa moments.", "heroSubtitle": "A beautifully mild season for scenic walks, regional food and unhurried days above Merano." }
+    },
+    "intro": { "eyebrow": "South Tyrol at your pace", "title": "Sunny paths, mountain views and room to slow down", "text": ["Lagundo is an ideal base for discovering the Merano region on foot. Gentle irrigation-channel paths wind through vineyards and orchards, while cable cars make higher panoramic walks easy to reach.", "Back at the Heinrichshof, warm pools, new saunas and a quiet garden help tired legs recover. Merano is only a short journey away and local public transport is included with the South Tyrol Guest Pass."], "image": "herbst-panorama.jpg" },
+    "highlights": [
+      { "image": "herbst-waalweg.jpg", "eyebrow": "Walking", "title": "Trails for every kind of day", "text": "Choose an easy panoramic Waalweg, a village walk or a higher Alpine route with clear mountain views." },
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Wellness", "title": "A warm welcome after the trail", "text": "Indoor and outdoor pools, whirlpool, new saunas and peaceful relaxation areas await back at the hotel." },
+      { "image": "herbst-kulinarik.jpg", "eyebrow": "Taste", "title": "South Tyrolean evenings", "text": "Regional flavours and Mediterranean lightness bring each active day to a delicious close." }
+    ],
+    "story": { "eyebrow": "A simple base for a richer holiday", "title": "Nature, Merano and wellness in one easy stay", "text": ["You do not need to choose between an active holiday and proper relaxation here. The landscape begins close to the door, while the spa, garden and restaurant make staying in just as tempting.", "Personal service and a calm atmosphere leave you free to plan each day around the weather, your energy and the view."] }
+  },
+  {
+    "route": "/it/",
+    "key": "it-general",
+    "offerAudience": "general",
+    "locale": "it",
+    "lang": "it",
+    "title": "Residence Der Heinrichshof | Vacanza romantica a Lagundo vicino a Merano",
+    "description": "Hotel e residence a Lagundo vicino a Merano: camere, suite e appartamenti, nuova area wellness, cucina raffinata e Alto Adige Guest Pass incluso.",
+    "hero": { "image": "hero.jpg", "eyebrow": "Hotel & Residence Der Heinrichshof", "title": "L'Alto Adige che sa di leggerezza.", "subtitle": "Gusto, benessere e luoghi tranquilli sopra i tetti di Merano." },
+    "seasonal": {
+      "fruehling": { "heroImage": "apfelbluete.jpg", "heroEyebrow": "Primavera a Lagundo vicino a Merano", "heroTitle": "Quando l'Alto Adige torna a fiorire." },
+      "sommer": { "heroImage": "garten.jpg", "heroEyebrow": "Estate a Lagundo vicino a Merano", "heroTitle": "Al mattino in montagna. Al pomeriggio in piscina." },
+      "herbst": { "heroImage": "herbst-panorama.jpg", "heroEyebrow": "Autunno dorato a Lagundo vicino a Merano", "heroTitle": "Giornate dorate sopra Merano.", "heroSubtitle": "Panorami limpidi, vigneti luminosi e il piacevole calore della nostra nuova area wellness." }
+    },
+    "intro": { "eyebrow": "Arrivare a Lagundo", "title": "Un rifugio tranquillo tra vigneti e montagne", "text": ["All'Heinrichshof la vacanza inizia da una sensazione: il sole sul balcone al mattino, sentieri tra meleti e vigneti durante il giorno e una raffinata cucina altoatesina la sera.", "La posizione tranquilla sopra Merano unisce leggerezza mediterranea e limpidezza alpina, con un'accoglienza personale e tanto spazio per vivere la vacanza al proprio ritmo."], "image": "herbst-waalweg.jpg" },
+    "highlights": [
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Benessere", "title": "Calore, acqua e tanta quiete", "text": "Piscine interna ed esterna, nuova area saune, idromassaggio e angoli tranquilli per ore di vero relax." },
+      { "image": "herbst-kulinarik.jpg", "eyebrow": "Gusto", "title": "L'Alto Adige nel piatto", "text": "Prodotti regionali e una cucina serale alpino-mediterranea dalla firma personale e leggera." },
+      { "image": "herbst-ruecksack.jpg", "eyebrow": "Attività", "title": "Nel Meranese, direttamente dall'hotel", "text": "Roggia, vigneti e sentieri panoramici iniziano quasi davanti alla porta; i mezzi pubblici sono inclusi." }
+    ],
+    "story": { "eyebrow": "La bella sensazione è inclusa", "title": "Gestione familiare. Piacevolmente autentico.", "text": ["L'Heinrichshof è abbastanza grande per offrire libertà e abbastanza raccolto per dedicare vera attenzione. Camere luminose, suite spaziose o appartamenti privati permettono a ognuno di trovare la soluzione giusta.", "Che si tratti di una fuga romantica, di una settimana attiva o di qualche giorno di quiete, qui il comfort dell'hotel e la libertà del residence si incontrano con naturalezza."] }
+  },
+  {
+    "route": "/nl/",
+    "key": "nl-general",
+    "offerAudience": "general",
+    "locale": "nl",
+    "lang": "nl",
+    "title": "Hotel Heinrichshof | Actieve fiets- en wandelvakantie in Zuid-Tirol",
+    "description": "Een ontspannen fiets-, wandel- en wellnessvakantie in Algund bij Merano, met zwembaden, fijne keuken en de Zuid-Tirol Guest Pass inbegrepen.",
+    "hero": { "image": "hero.jpg", "eyebrow": "Hotel & Residence Der Heinrichshof", "title": "Zuid-Tirol, heerlijk ongedwongen.", "subtitle": "Genieten, wellness en rustige plekjes boven de daken van Merano." },
+    "seasonal": {
+      "fruehling": { "heroImage": "apfelbluete.jpg", "heroEyebrow": "Lente in Algund bij Merano", "heroTitle": "Als Zuid-Tirol weer tot bloei komt." },
+      "sommer": { "heroImage": "garten.jpg", "heroEyebrow": "Zomer in Algund bij Merano", "heroTitle": "Vroeg de bergen in. Later naar het zwembad." },
+      "herbst": { "heroImage": "herbst-panorama.jpg", "heroEyebrow": "Gouden herfst in Algund bij Merano", "heroTitle": "Gouden dagen boven Merano.", "heroSubtitle": "Helder bergzicht, stralende wijngaarden en weldadige warmte in onze nieuwe wellnesswereld." }
+    },
+    "intro": { "eyebrow": "Aankomen in Algund", "title": "Een rustige plek tussen wijngaarden en bergen", "text": ["In de Heinrichshof begint vakantie met een gevoel: 's morgens zon op het balkon, overdag vrij op pad door boomgaarden en wijngaarden en 's avonds genieten van de Zuid-Tiroolse keuken.", "De rustige ligging boven Merano combineert mediterrane lichtheid met de heldere Alpen – persoonlijk geleid, aangenaam ongedwongen en met veel ruimte voor uw eigen vakantiemomenten."], "image": "herbst-waalweg.jpg" },
+    "highlights": [
+      { "image": "herbst-ruecksack.jpg", "eyebrow": "Wandelen & fietsen", "title": "Actief vanaf de voordeur", "text": "Waalwegen, wijngaarden, fietsroutes en panoramapaden beginnen vlak bij het hotel." },
+      { "image": "spa-sauna-panorama.jpg", "eyebrow": "Wellness", "title": "Warmte, water en echte rust", "text": "Binnen- en buitenbad, nieuwe sauna's, whirlpool en rustige plekjes voor ontspannen uren." },
+      { "image": "herbst-kulinarik.jpg", "eyebrow": "Genieten", "title": "Zuid-Tirol op het bord", "text": "Regionale producten en een lichte alpine-mediterrane avondkeuken met een persoonlijke signatuur." }
+    ],
+    "story": { "eyebrow": "Het goede gevoel is inbegrepen", "title": "Persoonlijk geleid. Heerlijk ontspannen.", "text": ["De Heinrichshof is groot genoeg voor vrijheid en klein genoeg voor echte aandacht. U verblijft in lichte kamers, ruime suites of privéappartementen en kiest wat bij uw manier van reizen past.", "Een actieve week, een romantische korte vakantie of een paar rustige dagen: hotelcomfort en de vrijheid van een residence komen hier vanzelf samen."] }
+  }
+]
