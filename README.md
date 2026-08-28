@@ -46,9 +46,9 @@ Die drei Angebote und ihre Originalbilder wurden am 24.08.2026 von `https://www.
 
 ## Bilder
 
-Neue Originalbilder kommen in den zentralen Ordner `../assets`. Die für die Landingpages ausgewählten Originale liegen mit kurzen Dateinamen in `src/source-images`; Übergangsbilder in `../lp-alt/assets` bleiben als Rückfall erhalten.
+Neue angelieferte Originalbilder können lokal im Ordner `Bilder LP` abgelegt werden. Die ausgewählten Dateien erhalten kurze Namen in `src/source-images`. Beide Sammlungen der neuen Galerie-Originale sind über `.gitignore` vom Push ausgeschlossen, damit die hochauflösenden WeTransfer-Dateien das Repository nicht unnötig vergrößern.
 
-Nach der Bildauswahl optimiert `npm run images` alle tatsächlich verwendeten Dateien in zwei responsive WebP-Größen. Die Bilder werden in `src/images` gespeichert und können anschließend mit dem Projekt versioniert werden.
+`npm run images` erzeugt daraus zwei responsive WebP-Größen. Nur die komprimierten Dateien in `src/images` werden versioniert und von den Landingpages geladen. Die aktuell ergänzten 17 Motive benötigen dort zusammen rund 3,6 MB statt rund 122 MB Originaldaten.
 
 ## Gemeinsame Funktionen
 
