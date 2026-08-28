@@ -37,11 +37,11 @@
       "bookingEyebrow": "Direkt buchen",
       "bookingTitle": "Direkt buchen & sparen.",
       "bookingLoading": "Online-Buchung wird geladen …",
-      "trustOneTitle": "4 Sterne Superior",
+      "trustOneTitle": "4 Sterne",
       "trustOneText": "Persönlich geführt",
-      "trustTwoTitle": "9,2 / 10",
-      "trustTwoText": "Booking.com",
-      "trustThreeTitle": "AlgundCard inklusive",
+      "trustTwoTitle": "9,4 / 10",
+      "trustTwoText": "Residence · Booking.com",
+      "trustThreeTitle": "Südtirol Guest Pass inklusive",
       "trustThreeText": "Mobil in ganz Südtirol",
       "form": {
         "arrival": "Ankunft",
@@ -111,11 +111,11 @@
       "bookingEyebrow": "Book direct",
       "bookingTitle": "Book direct & save.",
       "bookingLoading": "Online booking is loading …",
-      "trustOneTitle": "4-star superior",
+      "trustOneTitle": "4-star hotel",
       "trustOneText": "Personally managed",
-      "trustTwoTitle": "9.2 / 10",
-      "trustTwoText": "Booking.com",
-      "trustThreeTitle": "AlgundCard included",
+      "trustTwoTitle": "9.4 / 10",
+      "trustTwoText": "Residence · Booking.com",
+      "trustThreeTitle": "Südtirol Guest Pass included",
       "trustThreeText": "Travel throughout South Tyrol",
       "form": {
         "arrival": "Arrival",
@@ -163,23 +163,23 @@
           ] },
           { "title": "Breakfast and restaurant", "blocks": [
             { "text": "Start the day with our vitality breakfast buffet from 7:30 to 10:30 am, served in the bright dining room or on the panoramic terrace." },
-            { "text": "In the evening, our menu combines Mediterranean lightness with authentic South Tyrolean flavours. Dinner is available for half-board guests." }
+            { "text": "In the evening, our menu combines Mediterranean lightness with authentic South Tyrolean flavours. Dinner is included for guests on half board. Guests staying with breakfast can add dinner flexibly on site, subject to availability." }
           ] },
           { "title": "Included services", "blocks": [
-            { "items": ["Indoor and outdoor pool plus whirlpool", "New alpine sauna area", "Wellness bag with bathrobe, slippers and towels", "Weekly activity programme", "Wi-Fi and parking", "AlgundCard with free public transport"] }
+            { "items": ["Indoor and outdoor pool plus whirlpool", "New alpine sauna area", "Wellness bag with bathrobe, slippers and towels", "Daily afternoon cake buffet", "Weekly activity programme", "Wi-Fi and parking", "Südtirol Guest Pass with free public transport"] }
           ] },
           { "title": "Good to know", "blocks": [
             { "items": [
               { "label": "Check-in", "text": "from 3:00 pm" },
               { "label": "Check-out", "text": "until 11:00 am" },
-              { "label": "Tourist tax", "text": "€3.10 per person/night; children under 14 are exempt" },
+              { "label": "Tourist tax", "text": "€3.10–€3.40 per person/night, depending on accommodation; children under 14 are exempt" },
               { "label": "Deposit", "text": "30% of the total amount, refundable within the free cancellation period" }
             ] },
             { "heading": "Cancellation terms" },
             { "items": ["Up to 3 weeks before arrival: free of charge", "20 to 7 days before arrival: 50%", "Less than 7 days, no-show or early departure: 100%"] }
           ] },
-          { "title": "AlgundCard", "blocks": [
-            { "text": "The complimentary AlgundCard gives you flexible access to public transport, selected cable cars and numerous museums throughout South Tyrol." }
+          { "title": "Südtirol Guest Pass", "blocks": [
+            { "text": "The complimentary Südtirol Guest Pass gives you flexible access to public transport and selected cable cars throughout South Tyrol." }
           ] }
         ]
       }
@@ -202,18 +202,22 @@
         "eyebrow": "Impressions",
         "title": "Discover Der Heinrichshof",
         "items": [
-          { "image": "liegewiese-2.jpg", "alt": "Der Heinrichshof and its gardens in Lagundo" },
-          { "image": "liegewiese-1.jpg", "alt": "Sunbathing lawn at Der Heinrichshof" },
-          { "image": "hero.jpg", "alt": "Panoramic view across the Merano region" },
-          { "image": "room-sued.jpg", "alt": "Double room with south-facing balcony" },
-          { "image": "haus-1.jpg", "alt": "Suite living area" },
-          { "image": "terrasse.jpg", "alt": "Panoramic terrace" },
-          { "image": "pool.jpg", "alt": "Indoor pool and wellness" },
-          { "image": "garten.jpg", "alt": "Garden at Der Heinrichshof" },
-          { "image": "naturesauna.jpg", "alt": "Natural sauna" },
-          { "image": "spa-sauna-panorama.jpg", "alt": "Alpine sauna landscape" },
-          { "image": "fotos-9.jpg", "alt": "Room in the Residence" },
-          { "image": "eiswasserfall.jpg", "alt": "Ice fountain in the spa" }
+          { "image": "gallery-hotel-aerial.jpg", "alt": "Der Heinrichshof hotel and residence from above" },
+          { "image": "gallery-hotel-evening.jpg", "alt": "Der Heinrichshof in the evening light" },
+          { "image": "gallery-outdoor-pool.jpg", "alt": "Outdoor pool with panoramic views" },
+          { "image": "gallery-room.jpg", "alt": "Bright room with balcony and mountain views" },
+          { "image": "gallery-terrace.jpg", "alt": "Flower-filled panoramic terrace" },
+          { "image": "gallery-bar.jpg", "alt": "Bar and lounge at Der Heinrichshof" },
+          { "image": "gallery-cake.jpg", "alt": "Daily afternoon cake buffet" },
+          { "image": "gallery-dinner.jpg", "alt": "Fine evening cuisine at Der Heinrichshof" },
+          { "image": "gallery-indoor-pool.jpg", "alt": "Indoor pool at Der Heinrichshof" },
+          { "image": "gallery-sauna-view.jpg", "alt": "Sauna overlooking the Merano region" },
+          { "image": "gallery-relax.jpg", "alt": "Relaxation area in the new spa" },
+          { "image": "gallery-sauna.jpg", "alt": "New alpine sauna" },
+          { "image": "gallery-steam-bath.jpg", "alt": "Aromatic steam bath" },
+          { "image": "gallery-garden.jpg", "alt": "Garden and sunbathing lawn" },
+          { "image": "gallery-location-aerial.jpg", "alt": "Der Heinrichshof among the vineyards of Lagundo" },
+          { "image": "gallery-relax-room.jpg", "alt": "Stylish spa relaxation room" }
         ]
       }
     },
@@ -261,11 +265,11 @@
       "bookingEyebrow": "Prenota direttamente",
       "bookingTitle": "Prenota direttamente e risparmia.",
       "bookingLoading": "Il sistema di prenotazione si sta caricando …",
-      "trustOneTitle": "4 stelle superior",
+      "trustOneTitle": "Hotel 4 stelle",
       "trustOneText": "Gestione familiare",
-      "trustTwoTitle": "9,2 / 10",
-      "trustTwoText": "Booking.com",
-      "trustThreeTitle": "AlgundCard inclusa",
+      "trustTwoTitle": "9,4 / 10",
+      "trustTwoText": "Residence · Booking.com",
+      "trustThreeTitle": "Südtirol Guest Pass incluso",
       "trustThreeText": "Mobilità in tutto l'Alto Adige",
       "form": {
         "arrival": "Arrivo",
@@ -313,23 +317,23 @@
           ] },
           { "title": "Colazione e ristorante", "blocks": [
             { "text": "La giornata inizia con il buffet della colazione dalle 7:30 alle 10:30, nella luminosa sala o sulla terrazza panoramica." },
-            { "text": "La sera la nostra cucina unisce leggerezza mediterranea e sapori altoatesini. La cena è disponibile per gli ospiti in mezza pensione." }
+            { "text": "La sera la nostra cucina unisce leggerezza mediterranea e sapori altoatesini. La cena è inclusa per gli ospiti in mezza pensione. Gli ospiti con colazione possono aggiungerla direttamente in loco, in modo flessibile e secondo disponibilità." }
           ] },
           { "title": "Servizi inclusi", "blocks": [
-            { "items": ["Piscina coperta e scoperta e idromassaggio", "Nuovo mondo delle saune alpine", "Borsa wellness con accappatoio, ciabatte e teli", "Programma settimanale di attività", "Wi-Fi e parcheggio", "AlgundCard con trasporto pubblico gratuito"] }
+            { "items": ["Piscina coperta e scoperta e idromassaggio", "Nuovo mondo delle saune alpine", "Borsa wellness con accappatoio, ciabatte e teli", "Buffet quotidiano di torte nel pomeriggio", "Programma settimanale di attività", "Wi-Fi e parcheggio", "Südtirol Guest Pass con trasporto pubblico gratuito"] }
           ] },
           { "title": "Da sapere", "blocks": [
             { "items": [
               { "label": "Check-in", "text": "dalle ore 15:00" },
               { "label": "Check-out", "text": "entro le ore 11:00" },
-              { "label": "Imposta di soggiorno", "text": "€ 3,10 a persona/notte; bambini sotto i 14 anni esenti" },
+              { "label": "Imposta di soggiorno", "text": "€ 3,10–€ 3,40 a persona/notte, a seconda dell'alloggio; bambini sotto i 14 anni esenti" },
               { "label": "Caparra", "text": "30% dell'importo totale, rimborsabile entro il periodo di cancellazione gratuita" }
             ] },
             { "heading": "Condizioni di cancellazione" },
             { "items": ["Fino a 3 settimane prima dell'arrivo: gratuita", "Da 20 a 7 giorni prima: 50%", "Meno di 7 giorni, no-show o partenza anticipata: 100%"] }
           ] },
-          { "title": "AlgundCard", "blocks": [
-            { "text": "Con l'AlgundCard gratuita utilizzate i mezzi pubblici, alcune funivie e numerosi musei in tutto l'Alto Adige." }
+          { "title": "Südtirol Guest Pass", "blocks": [
+            { "text": "Con il Südtirol Guest Pass gratuito utilizzate i mezzi pubblici e alcune funivie in tutto l'Alto Adige." }
           ] }
         ]
       }
@@ -352,18 +356,22 @@
         "eyebrow": "Impressioni",
         "title": "Scoprite il Heinrichshof",
         "items": [
-          { "image": "liegewiese-2.jpg", "alt": "Il Heinrichshof e il suo giardino a Lagundo" },
-          { "image": "liegewiese-1.jpg", "alt": "Prato relax del Heinrichshof" },
-          { "image": "hero.jpg", "alt": "Vista panoramica sulla conca di Merano" },
-          { "image": "room-sued.jpg", "alt": "Camera doppia con balcone sud" },
-          { "image": "haus-1.jpg", "alt": "Soggiorno di una suite" },
-          { "image": "terrasse.jpg", "alt": "Terrazza panoramica" },
-          { "image": "pool.jpg", "alt": "Piscina coperta e wellness" },
-          { "image": "garten.jpg", "alt": "Giardino del Heinrichshof" },
-          { "image": "naturesauna.jpg", "alt": "Sauna naturale" },
-          { "image": "spa-sauna-panorama.jpg", "alt": "Mondo delle saune alpine" },
-          { "image": "fotos-9.jpg", "alt": "Camera nella Residence" },
-          { "image": "eiswasserfall.jpg", "alt": "Fontana di ghiaccio nella spa" }
+          { "image": "gallery-hotel-aerial.jpg", "alt": "Hotel e Residence Der Heinrichshof dall'alto" },
+          { "image": "gallery-hotel-evening.jpg", "alt": "Der Heinrichshof nella luce della sera" },
+          { "image": "gallery-outdoor-pool.jpg", "alt": "Piscina esterna con vista panoramica" },
+          { "image": "gallery-room.jpg", "alt": "Camera luminosa con balcone e vista montagna" },
+          { "image": "gallery-terrace.jpg", "alt": "Terrazza panoramica fiorita" },
+          { "image": "gallery-bar.jpg", "alt": "Bar e lounge del Heinrichshof" },
+          { "image": "gallery-cake.jpg", "alt": "Buffet quotidiano di torte nel pomeriggio" },
+          { "image": "gallery-dinner.jpg", "alt": "Raffinata cucina serale" },
+          { "image": "gallery-indoor-pool.jpg", "alt": "Piscina coperta del Heinrichshof" },
+          { "image": "gallery-sauna-view.jpg", "alt": "Sauna con vista sulla conca di Merano" },
+          { "image": "gallery-relax.jpg", "alt": "Zona relax della nuova area wellness" },
+          { "image": "gallery-sauna.jpg", "alt": "Nuova sauna alpina" },
+          { "image": "gallery-steam-bath.jpg", "alt": "Bagno turco aromatico" },
+          { "image": "gallery-garden.jpg", "alt": "Giardino e prato relax" },
+          { "image": "gallery-location-aerial.jpg", "alt": "Der Heinrichshof tra i vigneti di Lagundo" },
+          { "image": "gallery-relax-room.jpg", "alt": "Elegante sala relax della spa" }
         ]
       }
     },
@@ -411,11 +419,11 @@
       "bookingEyebrow": "Direct boeken",
       "bookingTitle": "Boek direct en bespaar.",
       "bookingLoading": "Online boeken wordt geladen …",
-      "trustOneTitle": "4-sterren superior",
+      "trustOneTitle": "4-sterrenhotel",
       "trustOneText": "Persoonlijk geleid",
-      "trustTwoTitle": "9,2 / 10",
-      "trustTwoText": "Booking.com",
-      "trustThreeTitle": "AlgundCard inbegrepen",
+      "trustTwoTitle": "9,4 / 10",
+      "trustTwoText": "Residence · Booking.com",
+      "trustThreeTitle": "Südtirol Guest Pass inbegrepen",
       "trustThreeText": "Reizen door heel Zuid-Tirol",
       "form": {
         "arrival": "Aankomst",
@@ -463,23 +471,23 @@
           ] },
           { "title": "Ontbijt en restaurant", "blocks": [
             { "text": "Begin de dag met ons vitaliteitsontbijt van 7.30 tot 10.30 uur, in de lichte eetzaal of op het panoramaterras." },
-            { "text": "'s Avonds combineert onze keuken mediterrane lichtheid met authentieke Zuid-Tiroolse smaken. Diner is beschikbaar voor gasten met halfpension." }
+            { "text": "'s Avonds combineert onze keuken mediterrane lichtheid met authentieke Zuid-Tiroolse smaken. Het diner is inbegrepen voor gasten met halfpension. Gasten met ontbijt kunnen het diner flexibel ter plaatse en op basis van beschikbaarheid bijboeken." }
           ] },
           { "title": "Inbegrepen diensten", "blocks": [
-            { "items": ["Binnen- en buitenzwembad en whirlpool", "Nieuwe alpine sauna", "Wellnesstas met badjas, slippers en handdoeken", "Wekelijks activiteitenprogramma", "Wifi en parkeerplaats", "AlgundCard met gratis openbaar vervoer"] }
+            { "items": ["Binnen- en buitenzwembad en whirlpool", "Nieuwe alpine sauna", "Wellnesstas met badjas, slippers en handdoeken", "Dagelijks taartbuffet in de namiddag", "Wekelijks activiteitenprogramma", "Wifi en parkeerplaats", "Südtirol Guest Pass met gratis openbaar vervoer"] }
           ] },
           { "title": "Goed om te weten", "blocks": [
             { "items": [
               { "label": "Check-in", "text": "vanaf 15.00 uur" },
               { "label": "Check-out", "text": "tot 11.00 uur" },
-              { "label": "Toeristenbelasting", "text": "€ 3,10 per persoon/nacht; kinderen onder 14 jaar zijn vrijgesteld" },
+              { "label": "Toeristenbelasting", "text": "€ 3,10–€ 3,40 per persoon/nacht, afhankelijk van de accommodatie; kinderen onder 14 jaar zijn vrijgesteld" },
               { "label": "Aanbetaling", "text": "30% van het totaalbedrag, restitueerbaar binnen de gratis annuleringsperiode" }
             ] },
             { "heading": "Annuleringsvoorwaarden" },
             { "items": ["Tot 3 weken voor aankomst: gratis", "20 tot 7 dagen voor aankomst: 50%", "Minder dan 7 dagen, no-show of vroeg vertrek: 100%"] }
           ] },
-          { "title": "AlgundCard", "blocks": [
-            { "text": "Met de gratis AlgundCard gebruikt u het openbaar vervoer, geselecteerde kabelbanen en talrijke musea in heel Zuid-Tirol." }
+          { "title": "Südtirol Guest Pass", "blocks": [
+            { "text": "Met de gratis Südtirol Guest Pass gebruikt u het openbaar vervoer en geselecteerde kabelbanen in heel Zuid-Tirol." }
           ] }
         ]
       }
@@ -502,18 +510,22 @@
         "eyebrow": "Impressies",
         "title": "Ontdek Der Heinrichshof",
         "items": [
-          { "image": "liegewiese-2.jpg", "alt": "Der Heinrichshof en de tuin in Algund" },
-          { "image": "liegewiese-1.jpg", "alt": "Ligweide van Der Heinrichshof" },
-          { "image": "hero.jpg", "alt": "Panorama over de regio Merano" },
-          { "image": "room-sued.jpg", "alt": "Tweepersoonskamer met zuidbalkon" },
-          { "image": "haus-1.jpg", "alt": "Woonruimte van een suite" },
-          { "image": "terrasse.jpg", "alt": "Panoramaterras" },
-          { "image": "pool.jpg", "alt": "Binnenzwembad en wellness" },
-          { "image": "garten.jpg", "alt": "Tuin van Der Heinrichshof" },
-          { "image": "naturesauna.jpg", "alt": "Natuursauna" },
-          { "image": "spa-sauna-panorama.jpg", "alt": "Alpine sauna" },
-          { "image": "fotos-9.jpg", "alt": "Kamer in de Residence" },
-          { "image": "eiswasserfall.jpg", "alt": "IJsfontein in de spa" }
+          { "image": "gallery-hotel-aerial.jpg", "alt": "Hotel en Residence Der Heinrichshof vanuit de lucht" },
+          { "image": "gallery-hotel-evening.jpg", "alt": "Der Heinrichshof in de avond" },
+          { "image": "gallery-outdoor-pool.jpg", "alt": "Buitenzwembad met panoramisch uitzicht" },
+          { "image": "gallery-room.jpg", "alt": "Lichte kamer met balkon en bergzicht" },
+          { "image": "gallery-terrace.jpg", "alt": "Bloeiend panoramaterras" },
+          { "image": "gallery-bar.jpg", "alt": "Bar en lounge van Der Heinrichshof" },
+          { "image": "gallery-cake.jpg", "alt": "Dagelijks taartbuffet in de namiddag" },
+          { "image": "gallery-dinner.jpg", "alt": "Verfijnde avondkeuken" },
+          { "image": "gallery-indoor-pool.jpg", "alt": "Binnenzwembad van Der Heinrichshof" },
+          { "image": "gallery-sauna-view.jpg", "alt": "Sauna met uitzicht over de regio Merano" },
+          { "image": "gallery-relax.jpg", "alt": "Rustruimte in de nieuwe wellness" },
+          { "image": "gallery-sauna.jpg", "alt": "Nieuwe alpine sauna" },
+          { "image": "gallery-steam-bath.jpg", "alt": "Aromatisch stoombad" },
+          { "image": "gallery-garden.jpg", "alt": "Tuin en ligweide" },
+          { "image": "gallery-location-aerial.jpg", "alt": "Der Heinrichshof tussen de wijngaarden van Algund" },
+          { "image": "gallery-relax-room.jpg", "alt": "Stijlvolle wellnessrustruimte" }
         ]
       }
     },

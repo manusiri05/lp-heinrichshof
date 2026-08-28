@@ -17,7 +17,7 @@
           "title": "Frühstück und Restaurant",
           "blocks": [
             { "text": "Der Tag beginnt mit unserem vitalen Frühstücksbuffet von 7:30 bis 10:30 Uhr – im lichtdurchfluteten Speisesaal oder auf der Panoramaterrasse. Freuen Sie sich auf frisch gebackenes Brot, hausgemachte Marmeladen und Kuchen, Obst, Südtiroler Speck, Käse, Bio-Joghurt, Müsli, Eier nach Wunsch sowie Tee- und Kaffeespezialitäten." },
-            { "text": "Am Abend verbindet unser Menü mediterrane Leichtigkeit mit authentischen Südtiroler Aromen. Das Abendessen ist für Gäste mit Halbpension verfügbar." }
+            { "text": "Am Abend verbindet unser Menü mediterrane Leichtigkeit mit authentischen Südtiroler Aromen. Das Abendessen ist für Gäste mit Halbpension inklusive. Gäste mit Frühstück können das Abendessen flexibel vor Ort, nach Verfügbarkeit, dazubuchen." }
           ]
         },
         {
@@ -28,10 +28,11 @@
               "Kostenfreie Nutzung von Hallen- und Freibad sowie Whirlpool",
               "Zugang zur neuen alpinen Saunalandschaft mit Biosauna, finnischer Sauna und Aromadampfbad",
               "Wellness-Tasche mit Bademantel, Hausschuhen und Hand- und Badetüchern",
+              "Tägliches Kuchenbuffet am Nachmittag",
               "Wöchentliches Aktivprogramm mit geführten Wanderungen, Ausflügen und Verkostungen",
               "Gratis WLAN und kostenloser Parkplatz direkt am Hotel",
               "Kostenloser Fahrradverleih, E-Bikes gegen Gebühr",
-              "AlgundCard mit kostenlosem öffentlichem Nahverkehr"
+              "Südtirol Guest Pass mit kostenlosem öffentlichem Nahverkehr"
             ] }
           ]
         },
@@ -41,7 +42,7 @@
             { "items": [
               { "label": "Check-in", "text": "ab 15:00 Uhr; Online-Check-in per Link in der Buchungsbestätigung" },
               { "label": "Check-out", "text": "bis 11:00 Uhr" },
-              { "label": "Ortstaxe", "text": "€ 3,10 pro Person/Nacht; Kinder unter 14 Jahren sind befreit" },
+              { "label": "Ortstaxe", "text": "€ 3,10–€ 3,40 pro Person/Nacht, je nach Unterkunft; Kinder unter 14 Jahren sind befreit" },
               { "label": "Anzahlung", "text": "30 % des Gesamtbetrags, erstattbar innerhalb der kostenlosen Stornierungsfrist" }
             ] },
             { "heading": "Stornobedingungen" },
@@ -53,13 +54,12 @@
           ]
         },
         {
-          "title": "AlgundCard",
+          "title": "Südtirol Guest Pass",
           "blocks": [
-            { "text": "Als Gast im Heinrichshof erhalten Sie die AlgundCard kostenfrei und erkunden Südtirol flexibel ohne zusätzliche Fahrtkosten." },
+            { "text": "Als Gast im Heinrichshof erhalten Sie den Südtirol Guest Pass kostenfrei und erkunden Südtirol flexibel ohne zusätzliche Fahrtkosten." },
             { "items": [
               "Kostenlose Nutzung der öffentlichen Verkehrsmittel in ganz Südtirol",
               "Kostenfreie Nutzung ausgewählter Seilbahnen und Bergbahnen",
-              "Freier Eintritt in zahlreiche Museen in Südtirol",
               "Saisonale Rabatte für Ausflugsziele, Verkostungen und geführte Touren"
             ] }
           ]
@@ -90,11 +90,11 @@
               "Geschirr- und Handtücher",
               "Tägliche Reinigung des Appartements auf Wunsch und Wäscheservice",
               "Brötchenservice",
-              "Kuchenbuffet am Nachmittag",
+              "Tägliches Kuchenbuffet am Nachmittag",
               "Wöchentliches Aktivprogramm: geführte Wanderungen, Ausflüge und Verkostungen",
               "Gratis WLAN",
               "Kostenloser Fahrradverleih, E-Bikes gegen Gebühr",
-              "AlgundCard: kostenloser öffentlicher Nahverkehr"
+              "Südtirol Guest Pass: kostenloser öffentlicher Nahverkehr"
             ] }
           ]
         },
@@ -140,7 +140,7 @@
             { "items": [
               "EU-Heimtierpass mit den erforderlichen Einträgen",
               "Tätowierung oder Mikrochip zur eindeutigen Identifizierung",
-              "Gültige Tollwut-Schutzimpfung; mindestens 21 Tage und maximal ein Jahr vor der Einreise"
+              "Eine gültige Tollwut-Schutzimpfung. Bei der Erstimpfung muss diese mindestens 21 Tage vor der Einreise erfolgt sein."
             ] }
           ]
         },
@@ -156,7 +156,7 @@
         {
           "title": "Frühstück und Restaurant",
           "blocks": [
-            { "text": "Das vitale Frühstücksbuffet wird von 7:30 bis 10:30 Uhr serviert. Am Abend verbindet unser Menü mediterrane Leichtigkeit mit Südtiroler Aromen." },
+            { "text": "Das vitale Frühstücksbuffet wird von 7:30 bis 10:30 Uhr serviert. Am Abend verbindet unser Menü mediterrane Leichtigkeit mit Südtiroler Aromen. Das Abendessen ist für Gäste mit Halbpension inklusive. Gäste mit Frühstück können das Abendessen flexibel vor Ort, nach Verfügbarkeit, dazubuchen." },
             { "text": "Hunde sind im Speisesaal sowie während der Mahlzeiten auf der Terrasse nicht vorgesehen. In der Bar und außerhalb der Essenszeiten auf der Terrasse sind sie willkommen." }
           ]
         },
@@ -167,8 +167,9 @@
               "Kostenfreie Nutzung von Hallen- und Freibad sowie Whirlpool für die menschlichen Gäste",
               "Zugang zur neuen alpinen Saunalandschaft",
               "Wellness-Tasche mit Bademantel, Hausschuhen und Badetüchern",
+              "Tägliches Kuchenbuffet am Nachmittag",
               "Aktivprogramm, Gratis WLAN und kostenloser Parkplatz",
-              "AlgundCard mit kostenlosem öffentlichem Nahverkehr"
+              "Südtirol Guest Pass mit kostenlosem öffentlichem Nahverkehr"
             ] }
           ]
         },
@@ -179,7 +180,7 @@
               { "label": "Hund", "text": "auf Anfrage; € 25 pro Nacht in Suiten/Appartements und € 20 pro Nacht in Zimmern des Stammhauses" },
               { "label": "Check-in", "text": "ab 15:00 Uhr" },
               { "label": "Check-out", "text": "bis 11:00 Uhr" },
-              { "label": "Ortstaxe", "text": "€ 3,10 pro Person/Nacht; Kinder unter 14 Jahren sind befreit" },
+              { "label": "Ortstaxe", "text": "€ 3,10–€ 3,40 pro Person/Nacht, je nach Unterkunft; Kinder unter 14 Jahren sind befreit" },
               { "label": "Anzahlung", "text": "30 % des Gesamtbetrags, erstattbar innerhalb der kostenlosen Stornierungsfrist" }
             ] },
             { "heading": "Stornobedingungen" },
@@ -191,9 +192,9 @@
           ]
         },
         {
-          "title": "AlgundCard",
+          "title": "Südtirol Guest Pass",
           "blocks": [
-            { "text": "Mit der kostenlosen AlgundCard nutzen Sie Südtirols öffentliche Verkehrsmittel und viele ausgewählte Bergbahnen ohne zusätzliche Kosten. Bitte beachten Sie, dass Ihr Hund in Bus und Bahn ein eigenes Ticket sowie einen Maulkorb benötigt." }
+            { "text": "Mit dem kostenlosen Südtirol Guest Pass nutzen Sie Südtirols öffentliche Verkehrsmittel und viele ausgewählte Bergbahnen ohne zusätzliche Kosten. Bitte beachten Sie, dass Ihr Hund in Bus und Bahn ein eigenes Ticket sowie einen Maulkorb benötigt." }
           ]
         }
       ]
@@ -285,18 +286,22 @@
       "eyebrow": "Einblicke",
       "title": "Der Heinrichshof in Bildern",
       "items": [
-        { "image": "liegewiese-2.jpg", "alt": "Hotel und Residence Der Heinrichshof aus der Vogelperspektive" },
-        { "image": "liegewiese-1.jpg", "alt": "Liegewiese und Außenbereich im Heinrichshof" },
-        { "image": "hero.jpg", "alt": "Panorama am Hotel und Residence Der Heinrichshof" },
-        { "image": "room-sued.jpg", "alt": "Doppelzimmer mit Südbalkon" },
-        { "image": "haus-1.jpg", "alt": "Heller Wohnbereich in der Residence" },
-        { "image": "terrasse.jpg", "alt": "Panoramaterrasse des Heinrichshof" },
-        { "image": "pool.jpg", "alt": "Pool und Wellness im Heinrichshof" },
-        { "image": "garten.jpg", "alt": "Garten des Heinrichshof" },
-        { "image": "naturesauna.jpg", "alt": "Nature Sauna im Wellnessbereich" },
-        { "image": "spa-sauna-panorama.jpg", "alt": "Alpine Saunalandschaft" },
-        { "image": "fotos-9.jpg", "alt": "Stilvolles Zimmer im Heinrichshof" },
-        { "image": "eiswasserfall.jpg", "alt": "Eiswasserfall in der Wellnesswelt" }
+        { "image": "gallery-hotel-aerial.jpg", "alt": "Hotel und Residence Der Heinrichshof aus der Vogelperspektive" },
+        { "image": "gallery-hotel-evening.jpg", "alt": "Der Heinrichshof in der Abendstimmung" },
+        { "image": "gallery-outdoor-pool.jpg", "alt": "Außenpool mit Panoramablick" },
+        { "image": "gallery-room.jpg", "alt": "Helles Zimmer mit Balkon und Bergblick" },
+        { "image": "gallery-terrace.jpg", "alt": "Blühende Panoramaterrasse des Heinrichshof" },
+        { "image": "gallery-bar.jpg", "alt": "Bar und Lounge im Heinrichshof" },
+        { "image": "gallery-cake.jpg", "alt": "Tägliches Kuchenbuffet am Nachmittag" },
+        { "image": "gallery-dinner.jpg", "alt": "Feine Abendküche im Heinrichshof" },
+        { "image": "gallery-indoor-pool.jpg", "alt": "Hallenbad im Heinrichshof" },
+        { "image": "gallery-sauna-view.jpg", "alt": "Sauna mit Blick über das Meraner Land" },
+        { "image": "gallery-relax.jpg", "alt": "Ruhebereich der neuen Wellnesswelt" },
+        { "image": "gallery-sauna.jpg", "alt": "Neue alpine Sauna" },
+        { "image": "gallery-steam-bath.jpg", "alt": "Aromadampfbad in der Wellnesswelt" },
+        { "image": "gallery-garden.jpg", "alt": "Garten und Liegewiese im Heinrichshof" },
+        { "image": "gallery-location-aerial.jpg", "alt": "Der Heinrichshof inmitten der Algunder Weinberge" },
+        { "image": "gallery-relax-room.jpg", "alt": "Stilvoller Ruheraum im Wellnessbereich" }
       ]
     },
     "apartment": {
@@ -307,20 +312,32 @@
         { "image": "apartment-kueche.jpg", "alt": "Küchenzeile im Appartement" },
         { "image": "apartment-3.jpg", "alt": "Wohnraum im Appartement" },
         { "image": "apartment-4.jpg", "alt": "Schlafbereich im Appartement" },
-        { "image": "spa-sauna-panorama.jpg", "alt": "Wellnessbereich für Residence-Gäste" },
-        { "image": "pool.jpg", "alt": "Pools im Heinrichshof" }
+        { "image": "gallery-room.jpg", "alt": "Schlafzimmer mit Balkon und Bergblick" },
+        { "image": "gallery-hotel-aerial.jpg", "alt": "Residence und Hotel aus der Vogelperspektive" },
+        { "image": "gallery-outdoor-pool.jpg", "alt": "Außenpool mit Panoramablick" },
+        { "image": "gallery-indoor-pool.jpg", "alt": "Hallenbad für Residence-Gäste" },
+        { "image": "gallery-sauna-view.jpg", "alt": "Sauna mit Blick über das Meraner Land" },
+        { "image": "gallery-relax-room.jpg", "alt": "Ruheraum in der Wellnesswelt" },
+        { "image": "gallery-terrace.jpg", "alt": "Panoramaterrasse im Heinrichshof" },
+        { "image": "gallery-cake.jpg", "alt": "Tägliches Kuchenbuffet am Nachmittag" }
       ]
     },
     "dog": {
       "eyebrow": "Einblicke",
       "title": "Gemeinsame Lieblingsplätze",
       "items": [
+        { "image": "gallery-dog.jpg", "alt": "Hundefreundlicher Urlaub im Heinrichshof" },
+        { "image": "gallery-hotel-aerial.jpg", "alt": "Hotel, Residence und große Liegewiese" },
+        { "image": "gallery-garden.jpg", "alt": "Garten und Liegewiese im Heinrichshof" },
+        { "image": "gallery-location-aerial.jpg", "alt": "Ruhige Lage inmitten der Algunder Weinberge" },
         { "image": "herbst-waalweg.jpg", "alt": "Spazierweg im herbstlichen Algund" },
-        { "image": "garten.jpg", "alt": "Garten und Liegewiese im Heinrichshof" },
-        { "image": "room-nord.jpg", "alt": "Zimmer mit Balkon" },
-        { "image": "herbst-ruecksack.jpg", "alt": "Wanderurlaub in Algund" },
-        { "image": "pool.jpg", "alt": "Wellness für die menschlichen Gäste" },
-        { "image": "herbst-panorama.jpg", "alt": "Panorama über das Meraner Land" }
+        { "image": "gallery-room.jpg", "alt": "Ausgewähltes Zimmer mit Balkon" },
+        { "image": "gallery-terrace.jpg", "alt": "Terrasse und Garten im Heinrichshof" },
+        { "image": "gallery-outdoor-pool.jpg", "alt": "Wellness für die menschlichen Gäste" },
+        { "image": "gallery-cake.jpg", "alt": "Tägliches Kuchenbuffet am Nachmittag" },
+        { "image": "gallery-sauna-view.jpg", "alt": "Sauna mit Panoramablick" },
+        { "image": "gallery-indoor-pool.jpg", "alt": "Hallenbad im Heinrichshof" },
+        { "image": "gallery-hotel-evening.jpg", "alt": "Der Heinrichshof in der Abendstimmung" }
       ]
     }
   }
