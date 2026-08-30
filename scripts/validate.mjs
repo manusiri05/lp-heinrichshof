@@ -39,6 +39,8 @@ for (const file of await htmlFiles(output)) {
   }
   if (/© 2025/.test(html)) errors.push(`${relative}: veraltete Jahreszahl 2025`);
   if (/Restplätze im Juni/i.test(html)) errors.push(`${relative}: veralteter Juni-Hinweis`);
+  if (!html.includes("})(window,document,'script','dataLayer','GTM-KCNBCS8T');")) errors.push(`${relative}: GTM-Script fehlt`);
+  if (!html.includes('https://www.googletagmanager.com/ns.html?id=GTM-KCNBCS8T')) errors.push(`${relative}: GTM-noscript fehlt`);
 }
 
 const pages = JSON.parse(await readFile(path.join(data, 'pages.json'), 'utf8'));
