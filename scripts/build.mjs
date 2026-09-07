@@ -20,6 +20,7 @@ const assetVersion = createHash('sha1').update((await Promise.all([
   readFile(path.join(source, 'styles', 'site.css'), 'utf8'),
   readFile(path.join(source, 'scripts', 'site.js'), 'utf8'),
   readFile(path.join(source, 'scripts', 'form.js'), 'utf8'),
+  readFile(path.join(source, 'scripts', 'voucher.js'), 'utf8'),
   readFile(path.join(source, 'scripts', 'booking.js'), 'utf8')
 ])).join('')).digest('hex').slice(0, 10);
 const buildDate = config.dateOverride || new Date().toISOString().slice(0, 10);
@@ -92,13 +93,13 @@ function expectationsBlock(profileKey, seasonKey) {
     <article class="expectation-card reveal"><p class="eyebrow">${esc(column.title)}</p><ul>${column.items.map((item) => `<li class="${column.tone === 'negative' ? 'is-negative' : 'is-positive'}">${esc(item)}</li>`).join('')}</ul></article>`).join('')}</div><div class="center-cta reveal"><a class="button" href="#anfrage">${esc(seasonNames[seasonKey] || '')}sauszeit anfragen</a></div></div></section>`;
 }
 
-function roomsBlock(profileKey, locale, t) {
+function roomsBlock(profileKey, locale, t, enquiryHref = '#anfrage') {
   const key = profileKey === 'apartment' ? 'apartment' : 'hotel';
   const rooms = locale.rooms?.[key] || content.rooms[key];
   if (!rooms?.items?.length) return '';
   const isApartment = key === 'apartment';
-  return `<section class="section rooms"><div class="container"><div class="slider-head reveal"><div><p class="eyebrow">${esc(rooms.eyebrow)}</p><h2 class="display">${esc(rooms.title)}</h2><p class="lead">${esc(rooms.intro)}</p></div>${rooms.items.length > 1 ? `<div class="slider-controls"><button type="button" data-slider-prev aria-label="${esc(t.roomPrevious)}">←</button><button type="button" data-slider-next aria-label="${esc(t.roomNext)}">→</button></div>` : ''}</div><div class="room-track${isApartment ? ' room-track--single' : ''}" data-slider>${rooms.items.map((room) => `
-    <article class="room-card reveal"><img ${imageAttributes(room.image, isApartment ? '(max-width: 820px) 100vw, 55vw' : '(max-width: 820px) 88vw, 34vw')} alt="${esc(room.title)}" width="1200" height="850" loading="lazy"><div class="room-body"><div class="room-meta">${esc(room.meta)}</div><h3>${esc(room.title)}</h3>${room.description ? `<p>${esc(room.description)}</p>` : ''}${room.details?.length ? `<ul class="room-details">${room.details.map((detail) => `<li>${esc(detail)}</li>`).join('')}</ul>` : ''}<div class="room-bottom"><strong>${esc(room.price)}</strong><div class="room-links">${room.url ? `<a href="${esc(room.url)}" target="_blank" rel="noopener">${esc(t.roomDetails)}</a>` : ''}<a href="#anfrage">${esc(t.request)}</a></div></div></div></article>`).join('')}</div></div></section>`;
+  return `<section class="section rooms" id="zimmer"><div class="container"><div class="slider-head reveal"><div><p class="eyebrow">${esc(rooms.eyebrow)}</p><h2 class="display">${esc(rooms.title)}</h2><p class="lead">${esc(rooms.intro)}</p></div>${rooms.items.length > 1 ? `<div class="slider-controls"><button type="button" data-slider-prev aria-label="${esc(t.roomPrevious)}">←</button><button type="button" data-slider-next aria-label="${esc(t.roomNext)}">→</button></div>` : ''}</div><div class="room-track${isApartment ? ' room-track--single' : ''}" data-slider>${rooms.items.map((room) => `
+    <article class="room-card reveal"><img ${imageAttributes(room.image, isApartment ? '(max-width: 820px) 100vw, 55vw' : '(max-width: 820px) 88vw, 34vw')} alt="${esc(room.title)}" width="1200" height="850" loading="lazy"><div class="room-body"><div class="room-meta">${esc(room.meta)}</div><h3>${esc(room.title)}</h3>${room.description ? `<p>${esc(room.description)}</p>` : ''}${room.details?.length ? `<ul class="room-details">${room.details.map((detail) => `<li>${esc(detail)}</li>`).join('')}</ul>` : ''}<div class="room-bottom"><strong>${esc(room.price)}</strong><div class="room-links">${room.url ? `<a href="${esc(room.url)}" target="_blank" rel="noopener">${esc(t.roomDetails)}</a>` : ''}<a href="${esc(enquiryHref)}">${esc(t.request)}</a></div></div></div></article>`).join('')}</div></div></section>`;
 }
 
 function galleryBlock(profileKey, locale, t) {
@@ -128,9 +129,19 @@ function offerCards(page, season, locale, t) {
   }).join('')}</div><p class="lead offers-empty" data-offers-empty${visibleCount ? ' hidden' : ''}>${esc(t.noOffers)}</p>`;
 }
 
-function voucherBlock(page) {
-  if (!page.voucher) return '';
-  return `<section class="voucher-strip"><div class="container voucher-strip-inner reveal"><div><p class="eyebrow">Exklusiv für neue Gäste</p><h2 class="display">${esc(page.voucher.amount)} Kennenlern-Geschenk</h2></div><p>${esc(page.voucher.text)}</p><a class="button" href="#anfrage">Gutschein sichern</a></div></section>`;
+function voucherSignupBlock(locale) {
+  return `<section class="section voucher-signup" id="voucher-anmeldung"><div class="container"><div class="voucher-signup-card reveal">
+    <div class="voucher-signup-head"><p class="eyebrow">Der Heinrichshof · Algund</p><h2 class="display">Ihr € 50,- Kennenlern-Geschenk für den nächsten Urlaub</h2><p>Tragen Sie sich ein und Sie erhalten Ihren persönlichen Gutschein nach kurzer E-Mail-Bestätigung direkt als PDF.</p><span class="voucher-signup-rule" aria-hidden="true"></span></div>
+    <form class="voucher-signup-form" data-voucher-form data-endpoint="https://dashboard.outofthebox-media.com/api/voucher/subscribe" data-hotel-slug="hotel-heinrichshof" data-campaign-id="8f67049d-8500-486a-af34-1264d11b2381" novalidate>
+      <div class="field"><label for="voucher-firstname">Vorname *</label><input id="voucher-firstname" name="firstname" type="text" autocomplete="given-name" required></div>
+      <div class="field"><label for="voucher-lastname">Nachname *</label><input id="voucher-lastname" name="lastname" type="text" autocomplete="family-name" required></div>
+      <div class="field field--full"><label for="voucher-email">E-Mail *</label><input id="voucher-email" name="email" type="email" inputmode="email" autocomplete="email" required></div>
+      <label class="voucher-privacy"><input name="privacy" type="checkbox" required><span>Ich habe die <a href="${esc(locale.links.privacy)}" target="_blank" rel="noopener">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zur Gutschein-Anmeldung zu. *</span></label>
+      <p class="voucher-form-status" data-voucher-status role="status" aria-live="polite"></p>
+      <p class="voucher-success" data-voucher-success role="status" aria-live="polite" hidden>✓ Vielen Dank! Bitte prüfen Sie Ihr E-Mail-Postfach (auch den Spam-Ordner) und bestätigen Sie Ihre Anmeldung. Danach erhalten Sie Ihren Gutschein direkt als PDF.</p>
+      <button class="button voucher-submit" type="submit">Jetzt anmelden</button>
+    </form>
+  </div></div></section>`;
 }
 
 function winterBlock(page) {
@@ -140,8 +151,7 @@ function winterBlock(page) {
 
 function form(page, localeKey, locale, t) {
   const labels = t.form;
-  const submitLabel = page.voucher ? `${page.voucher.amount} Gutschein anfragen` : labels.submit;
-  return `<form class="form-card" data-lead-form data-endpoint="${esc(site.apiUrl)}" data-hotel-slug="${esc(site.hotelSlug)}" data-language="${esc(localeKey.toUpperCase())}" data-page="${esc(page.route)}"${page.campaign ? ` data-campaign="${esc(page.campaign)}"` : ''} novalidate>
+  return `<form class="form-card" data-lead-form data-endpoint="${esc(site.apiUrl)}" data-hotel-slug="${esc(site.hotelSlug)}" data-language="${esc(localeKey.toUpperCase())}" data-page="${esc(page.route)}" data-pets-singular="${esc(labels.dogSingular)}" data-pets-plural="${esc(labels.dogPlural)}"${page.campaign ? ` data-campaign="${esc(page.campaign)}"` : ''} novalidate>
     <div class="form-grid">
       <div class="field"><label for="checkin-${page.key}">${esc(labels.arrival)} *</label><input id="checkin-${page.key}" name="checkin" type="date" required></div>
       <div class="field"><label for="checkout-${page.key}">${esc(labels.departure)} *</label><input id="checkout-${page.key}" name="checkout" type="date" required></div>
@@ -151,13 +161,15 @@ function form(page, localeKey, locale, t) {
       <div class="field field--full"><label for="phone-${page.key}">${esc(labels.phone)} *</label><input id="phone-${page.key}" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
       <div class="field"><label for="adults-${page.key}">${esc(labels.adults)}</label><select id="adults-${page.key}" name="adults"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
       <div class="field"><label for="children-${page.key}">${esc(labels.children)}</label><select id="children-${page.key}" name="children"><option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+      <div class="field"><label for="pets-${page.key}">${esc(labels.dog)}</label><select id="pets-${page.key}" name="pets_choice" data-pets-choice><option value="no" selected>${esc(labels.dogNo)}</option><option value="yes">${esc(labels.dogYes)}</option></select></div>
+      <div class="field" data-pets-count hidden><label for="pets-count-${page.key}">${esc(labels.dogCount)}</label><input id="pets-count-${page.key}" name="pets_count" type="number" min="1" max="3" step="1" value="1" inputmode="numeric" disabled></div>
       <div class="child-ages field--full" data-child-ages hidden></div>
       <div class="field field--full"><label for="board-${page.key}">${esc(labels.board)} *</label><select id="board-${page.key}" name="board" required><option value="">${esc(labels.boardPlaceholder)}</option><option>${esc(labels.breakfast)}</option><option>${esc(labels.halfBoard)}</option><option>${esc(labels.noBoard)}</option></select></div>
       <div class="field field--full"><label for="room-${page.key}">${esc(labels.room)}</label><select id="room-${page.key}" name="room_type"><option value="">${esc(labels.roomOpen)}</option><option>${esc(labels.doubleRoom)}</option><option>${esc(labels.suite)}</option><option>${esc(labels.apartment)}</option></select></div>
       <div class="field field--full"><label for="message-${page.key}">${esc(labels.message)}</label><textarea id="message-${page.key}" name="message"></textarea></div>
       <label class="privacy"><input name="privacy" type="checkbox" required><span>${esc(labels.privacyBefore)} <a href="${esc(locale.links.privacy)}" target="_blank" rel="noopener">${esc(labels.privacyLink)}</a> ${esc(labels.privacyAfter)} *</span></label>
       <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-      <button class="button submit" type="submit">${esc(submitLabel)}</button>
+      <button class="button submit" type="submit">${esc(labels.submit)}</button>
     </div>
   </form>`;
 }
@@ -168,6 +180,13 @@ function render(page) {
   const t = locale.ui;
   const seasonKey = page.fixedSeason || activeSeason;
   const season = locale.seasons?.[seasonKey] || seasons[seasonKey];
+  const isVoucherPage = Boolean(page.voucher);
+  const enquiryHref = isVoucherPage ? '#voucher-anmeldung' : '#anfrage';
+  const headerSecondaryHref = isVoucherPage ? '#zimmer' : '#buchung';
+  const headerSecondaryLabel = isVoucherPage ? 'Zimmer & Suiten' : t.book;
+  const primaryCta = isVoucherPage ? 'Jetzt anmelden' : t.requestNonBinding;
+  const heroSecondaryHref = isVoucherPage ? '#zimmer' : '#angebote';
+  const heroSecondaryLabel = isVoucherPage ? 'Zimmer & Suiten entdecken' : t.discoverOffers;
   const seasonal = page.seasonal?.[seasonKey] || {};
   const hero = {
     ...page.hero,
@@ -176,7 +195,6 @@ function render(page) {
     title: seasonal.heroTitle || page.hero.title,
     subtitle: seasonal.heroSubtitle || page.hero.subtitle
   };
-  const primaryCta = page.voucher ? `${page.voucher.amount} Gutschein sichern` : t.requestNonBinding;
   const profileKey = page.contentProfile || (page.key === 'ferienwohnung' ? 'apartment' : page.key === 'urlaub-mit-hund' ? 'dog' : 'hotel');
   const robots = config.noindex ? 'noindex, nofollow' : 'index, follow';
   return `<!doctype html>
@@ -208,44 +226,44 @@ function render(page) {
   <!-- End Google Tag Manager (noscript) -->
   <header class="site-header" data-header><div class="container header-inner">
     <a class="brand" href="#start" aria-label="${esc(site.name)} – ${esc(locale.descriptor || site.descriptor)}"><img src="/assets/logo.png" alt="${esc(site.name)}" width="244" height="64"></a>
-    <div class="header-actions"><a class="button button--header-secondary header-book" href="#buchung">${esc(t.book)}</a><a class="button" href="#anfrage">${esc(t.request)}</a></div>
+    <div class="header-actions"><a class="button button--header-secondary header-book" href="${esc(headerSecondaryHref)}">${esc(headerSecondaryLabel)}</a><a class="button" href="${esc(enquiryHref)}">${esc(isVoucherPage ? 'Jetzt anmelden' : t.request)}</a></div>
   </div></header>
 
   <main>
     <section class="hero" id="start">
       ${heroPicture(hero.image, hero.eyebrow)}<div class="hero-shade"></div>
-      <div class="container hero-content"><p class="eyebrow">${esc(hero.eyebrow)}</p><h1 class="display">${esc(hero.title)}</h1><p>${esc(hero.subtitle)}</p><div class="hero-buttons"><a class="button" href="#anfrage">${esc(primaryCta)}</a><a class="button button--ghost" href="#angebote">${esc(t.discoverOffers)}</a></div></div>
+      <div class="container hero-content"><p class="eyebrow">${esc(hero.eyebrow)}</p><h1 class="display">${esc(hero.title)}</h1><p>${esc(hero.subtitle)}</p><div class="hero-buttons"><a class="button" href="${esc(enquiryHref)}">${esc(primaryCta)}</a><a class="button button--ghost" href="${esc(heroSecondaryHref)}">${esc(heroSecondaryLabel)}</a></div></div>
     </section>
-    <section class="trust"><div class="container trust-inner"><div class="trust-item"><strong>${esc(t.trustOneTitle)}</strong><span>${esc(t.trustOneText)}</span></div><div class="trust-item"><strong>${esc(t.trustTwoTitle)}</strong><span>${esc(t.trustTwoText)}</span></div><div class="trust-item"><strong>${esc(t.trustThreeTitle)}</strong><span>${esc(t.trustThreeText)}</span></div></div></section>
+    ${isVoucherPage ? '' : `<section class="trust"><div class="container trust-inner"><div class="trust-item"><strong>${esc(t.trustOneTitle)}</strong><span>${esc(t.trustOneText)}</span></div><div class="trust-item"><strong>${esc(t.trustTwoTitle)}</strong><span>${esc(t.trustTwoText)}</span></div><div class="trust-item"><strong>${esc(t.trustThreeTitle)}</strong><span>${esc(t.trustThreeText)}</span></div></div></section>`}
 
-    ${voucherBlock(page)}
+    ${isVoucherPage ? voucherSignupBlock(locale) : ''}
 
-    <section class="section"><div class="container intro-grid"><div class="photo reveal"><img ${imageAttributes(page.intro.image, '(max-width: 820px) 100vw, 52vw')} alt="${esc(page.intro.title)}" width="960" height="1200" loading="lazy"></div><div class="copy reveal"><p class="eyebrow">${esc(page.intro.eyebrow)}</p><h2 class="display">${esc(page.intro.title)}</h2>${page.intro.text.map((p) => `<p>${esc(p)}</p>`).join('')}<a href="#anfrage">${esc(t.personalOffer)}</a></div></div></section>
+    ${isVoucherPage ? '' : `<section class="section"><div class="container intro-grid"><div class="photo reveal"><img ${imageAttributes(page.intro.image, '(max-width: 820px) 100vw, 52vw')} alt="${esc(page.intro.title)}" width="960" height="1200" loading="lazy"></div><div class="copy reveal"><p class="eyebrow">${esc(page.intro.eyebrow)}</p><h2 class="display">${esc(page.intro.title)}</h2>${page.intro.text.map((p) => `<p>${esc(p)}</p>`).join('')}<a href="#anfrage">${esc(t.personalOffer)}</a></div></div></section>`}
 
-    ${highlights(page.highlights, t)}
+    ${isVoucherPage ? '' : highlights(page.highlights, t)}
 
-    ${expectationsBlock(profileKey, seasonKey)}
+    ${isVoucherPage ? '' : expectationsBlock(profileKey, seasonKey)}
 
-    <section class="section season"><div class="container"><article class="season-card reveal"><img ${imageAttributes(season.image, '(max-width: 820px) 100vw, 50vw')} alt="${esc(season.label)}" width="1200" height="900" loading="lazy"><div class="season-copy"><p class="eyebrow">${esc(season.label)}</p><h2 class="display">${esc(season.title)}</h2><p class="lead">${esc(season.text)}</p><a href="#angebote">${esc(t.seasonOffers)}</a></div></article></div></section>
+    ${isVoucherPage ? '' : `<section class="section season"><div class="container"><article class="season-card reveal"><img ${imageAttributes(season.image, '(max-width: 820px) 100vw, 50vw')} alt="${esc(season.label)}" width="1200" height="900" loading="lazy"><div class="season-copy"><p class="eyebrow">${esc(season.label)}</p><h2 class="display">${esc(season.title)}</h2><p class="lead">${esc(season.text)}</p><a href="#angebote">${esc(t.seasonOffers)}</a></div></article></div></section>`}
 
-    ${informationBlock(profileKey, locale)}
+    ${isVoucherPage ? '' : informationBlock(profileKey, locale)}
 
-    ${roomsBlock(profileKey, locale, t)}
+    ${roomsBlock(profileKey, locale, t, enquiryHref)}
 
-    <section class="section" id="angebote"><div class="container"><div class="offers-head"><div><p class="eyebrow">${esc(t.offersEyebrow)}</p><h2 class="display">${esc(t.offersTitle)}</h2></div><p class="lead">${esc(t.offersLead)}</p></div>${offerCards(page, seasonKey, locale, t)}</div></section>
+    ${isVoucherPage ? '' : `<section class="section" id="angebote"><div class="container"><div class="offers-head"><div><p class="eyebrow">${esc(t.offersEyebrow)}</p><h2 class="display">${esc(t.offersTitle)}</h2></div><p class="lead">${esc(t.offersLead)}</p></div>${offerCards(page, seasonKey, locale, t)}</div></section>`}
 
-    ${winterBlock(page)}
+    ${isVoucherPage ? '' : winterBlock(page)}
 
     ${galleryBlock(profileKey, locale, t)}
 
-    ${story(page.story, t)}
+    ${isVoucherPage ? '' : story(page.story, t)}
 
-    <section class="section request" id="anfrage"><div class="container request-grid"><div><p class="eyebrow">${page.voucher ? 'Kennenlern-Gutschein' : esc(t.requestEyebrow)}</p><h2 class="display">${page.voucher ? `Jetzt anfragen und ${esc(page.voucher.amount)} sichern.` : esc(t.requestTitle)}</h2><p class="lead">${page.voucher ? esc(page.voucher.formText) : esc(t.requestLead)}</p></div>${form(page, localeKey, locale, t)}</div></section>
-    <section class="section booking" id="buchung"><div class="container"><div class="booking-head"><p class="eyebrow">${esc(t.bookingEyebrow)}</p><h2 class="display">${esc(t.bookingTitle)}</h2></div><div class="booking-shell"><div id="booking-${esc(page.key)}" data-booking-widget data-widget-id="${esc(site.bookingWidgetId)}" data-property-id="${esc(site.bookingPropertyId)}" data-language="${esc(localeKey)}" data-privacy-url="${esc(locale.links.privacy)}" data-terms-url="https://www.heinrichshof.com/${esc(localeKey)}/"><p>${esc(t.bookingLoading)}</p></div></div></div></section>
+    ${isVoucherPage ? '' : `<section class="section request" id="anfrage"><div class="container request-grid"><div><p class="eyebrow">${esc(t.requestEyebrow)}</p><h2 class="display">${esc(t.requestTitle)}</h2><p class="lead">${esc(t.requestLead)}</p></div>${form(page, localeKey, locale, t)}</div></section>
+    <section class="section booking" id="buchung"><div class="container"><div class="booking-head"><p class="eyebrow">${esc(t.bookingEyebrow)}</p><h2 class="display">${esc(t.bookingTitle)}</h2></div><div class="booking-shell"><div id="booking-${esc(page.key)}" data-booking-widget data-widget-id="${esc(site.bookingWidgetId)}" data-property-id="${esc(site.bookingPropertyId)}" data-language="${esc(localeKey)}" data-privacy-url="${esc(locale.links.privacy)}" data-terms-url="https://www.heinrichshof.com/${esc(localeKey)}/"><p>${esc(t.bookingLoading)}</p></div></div></div></section>`}
   </main>
 
   <footer class="site-footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">${esc(site.name)}</div><div>${esc(site.address)}<br><a href="mailto:${esc(site.email)}">${esc(site.email)}</a> · <a href="tel:${esc(site.phoneHref)}">${esc(site.phoneLabel)}</a></div></div><nav class="footer-links" aria-label="Legal"><a href="${esc(locale.links.cookies)}">${esc(t.cookies)}</a><a href="${esc(locale.links.privacy)}">${esc(t.privacy)}</a><a href="${esc(locale.links.imprint)}">${esc(t.imprint)}</a></nav></div><div class="copyright">© ${new Date().getFullYear()} Hotel & Residence Der Heinrichshof · IT02295790212 · CIN: IT021038A142ZN5WEO</div></div></footer>
-  <script src="/assets/site.js?v=${assetVersion}" defer></script><script src="/assets/form.js?v=${assetVersion}" defer></script><script src="/assets/booking.js?v=${assetVersion}" defer></script>
+  <script src="/assets/site.js?v=${assetVersion}" defer></script><script src="/assets/form.js?v=${assetVersion}" defer></script><script src="/assets/voucher.js?v=${assetVersion}" defer></script><script src="/assets/booking.js?v=${assetVersion}" defer></script>
 </body></html>`;
 }
 
@@ -256,6 +274,7 @@ await Promise.all([
   cp(path.join(source, 'static', 'logo.png'), path.join(output, 'assets', 'logo.png')),
   cp(path.join(source, 'scripts', 'site.js'), path.join(output, 'assets', 'site.js')),
   cp(path.join(source, 'scripts', 'form.js'), path.join(output, 'assets', 'form.js')),
+  cp(path.join(source, 'scripts', 'voucher.js'), path.join(output, 'assets', 'voucher.js')),
   cp(path.join(source, 'scripts', 'booking.js'), path.join(output, 'assets', 'booking.js'))
 ]);
 
