@@ -27,6 +27,9 @@
     var checkout = form.querySelector('[name="checkout"]');
     var children = form.querySelector('[name="children"]');
     var ages = form.querySelector('[data-child-ages]');
+    var petsChoice = form.querySelector('[data-pets-choice]');
+    var petsCountField = form.querySelector('[data-pets-count]');
+    var petsCount = form.querySelector('[name="pets_count"]');
     var today = new Date();
     var todayIso = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
     checkin.min = todayIso;
@@ -67,6 +70,21 @@
     children.addEventListener('change', updateAges);
     updateAges();
 
+    function normalizedPetCount() {
+      var count = Number(petsCount && petsCount.value);
+      return Number.isInteger(count) ? Math.max(1, Math.min(3, count)) : 1;
+    }
+
+    function updatePets() {
+      if (!petsChoice || !petsCountField || !petsCount) return;
+      var hasPets = petsChoice.value === 'yes';
+      petsCountField.hidden = !hasPets;
+      petsCount.disabled = !hasPets;
+      if (hasPets) petsCount.value = String(normalizedPetCount());
+    }
+    if (petsChoice) petsChoice.addEventListener('change', updatePets);
+    updatePets();
+
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       var invalid = Array.from(form.querySelectorAll('[required]')).filter(function (field) {
@@ -93,6 +111,11 @@
       var data = new FormData(form);
       var attributionData = savedAttribution();
       var childAges = Array.from(form.querySelectorAll('[name^="child_age_"]')).map(function (field) { return field.value; });
+      var pets = '';
+      if (petsChoice && petsChoice.value === 'yes') {
+        var petCount = normalizedPetCount();
+        pets = petCount + ' ' + (petCount === 1 ? form.dataset.petsSingular : form.dataset.petsPlural);
+      }
       var messageParts = [];
       if (form.dataset.campaign) messageParts.push(messages.campaign + ': ' + form.dataset.campaign);
       if (data.get('board')) messageParts.push(messages.board + ': ' + data.get('board'));
@@ -108,6 +131,7 @@
         adults: Number(data.get('adults') || 2),
         children: Number(data.get('children') || 0),
         children_ages: childAges.join(', '),
+        pets: pets,
         message: messageParts.join('\n'),
         room_type: data.get('room_type') || '',
         language: form.dataset.language || 'DE',
@@ -150,6 +174,7 @@
         button.hidden = true;
         form.reset();
         updateAges();
+        updatePets();
         try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
       }).catch(function () {
         status.textContent = messages.error;

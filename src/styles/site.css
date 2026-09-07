@@ -63,6 +63,22 @@ button, input, select, textarea { font: inherit; }
 .voucher-strip .display { font-size: clamp(2.1rem,4vw,3.7rem); }
 .voucher-strip p { margin: 0; color: #665c4b; }
 
+.voucher-signup { scroll-margin-top: 76px; background: linear-gradient(180deg, #f1ebdf 0%, var(--cream) 100%); }
+.voucher-signup-card { max-width: 760px; margin-inline: auto; overflow: hidden; border: 1px solid rgba(128,114,88,.22); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+.voucher-signup-head { max-width: 600px; margin: 0 auto; padding: clamp(34px, 6vw, 58px) clamp(24px, 6vw, 68px) 16px; text-align: center; }
+.voucher-signup-head .display { font-size: clamp(2.25rem, 5.3vw, 4.25rem); }
+.voucher-signup-head > p:last-of-type { margin: 18px 0 0; color: var(--muted); }
+.voucher-signup-rule { display: block; width: 48px; height: 2px; margin: 24px auto 0; border-radius: 999px; background: var(--sand); }
+.voucher-signup-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 26px clamp(24px, 6vw, 68px) clamp(34px, 6vw, 58px); }
+.voucher-privacy { grid-column: 1 / -1; display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; padding: 15px 16px; border: 1px solid #e5ded2; border-radius: 12px; background: var(--cream); color: var(--muted); font-size: .82rem; }
+.voucher-privacy input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--sand-dark); }
+.voucher-privacy a { color: var(--sand-dark); }
+.voucher-signup-form [aria-invalid="true"] { border-color: #a84235; box-shadow: 0 0 0 3px rgba(168,66,53,.12); }
+.voucher-form-status, .voucher-success, .voucher-submit { grid-column: 1 / -1; }
+.voucher-form-status { min-height: 1.4em; margin: 0; color: #914033; font-size: .85rem; }
+.voucher-success { margin: 0; padding: 16px; border: 1px solid #cfe0c4; border-radius: 12px; background: #eef3ea; color: #456a46; text-align: center; font-size: .92rem; }
+.voucher-submit { width: 100%; border: 0; cursor: pointer; }
+
 .section { padding: clamp(76px, 9vw, 132px) 0; }
 .intro-grid { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr); gap: clamp(42px, 7vw, 96px); align-items: center; }
 .photo { overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow); }
@@ -236,6 +252,7 @@ button, input, select, textarea { font: inherit; }
   .voucher-strip { padding: 42px 0; }
   .voucher-strip-inner { gap: 20px; }
   .voucher-strip-inner .button { justify-self: start; }
+  .voucher-signup-form { grid-template-columns: 1fr; }
   .winter-media img { min-height: 360px; }
   .slider-head { align-items: center; }
   .room-track { grid-auto-columns: min(86vw, 360px); margin-right: -18px; }
